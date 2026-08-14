@@ -83,6 +83,15 @@ function formatSeason(year) {
   return `${year}–${String(year + 1).slice(-2)}`;
 }
 
+function debutLabel(player) {
+  const [debut] = careerStats[player.id] || [];
+  return Number.isInteger(debut) ? formatSeason(debut) : "an unknown season";
+}
+
+function teamCount(player) {
+  return new Set(player.teams.map((stint) => stint.team)).size;
+}
+
 function findConnection(firstId, secondId) {
   const first = playerById[firstId];
   const second = playerById[secondId];
@@ -393,10 +402,23 @@ function showHint() {
   const path = shortestPath(current, puzzle.target);
   if (!path || path.length < 2) return;
 
+  const hintNumber = state.hintsUsed + 1;
   state.hintsLeft -= 1;
   state.hintsUsed += 1;
   const next = playerById[path[1]];
-  setFeedback(`Try someone whose last name starts with “${next.name.split(" ").at(-1)[0]}”.`, "hint");
+  const connection = findConnection(current, next);
+  const teams = teamCount(next);
+  const teamText = `${teams} ${teams === 1 ? "team" : "teams"}`;
+  const hints = [
+    `Next step: look for a ${next.position} who debuted in ${debutLabel(next)} and has ${teamText} in the database.`,
+    connection
+      ? `Team clue: ${playerById[current].name} connects to the next player through the ${connection.team}.`
+      : `Team clue: the next player has ${teamText} in the database.`,
+    connection
+      ? `Strong clue: they shared the ${connection.team} in ${connection.season}, and the player’s last name starts with “${lastName(next)[0]}”.`
+      : `Strong clue: the player’s last name starts with “${lastName(next)[0]}”.`,
+  ];
+  setFeedback(hints[Math.min(hintNumber - 1, hints.length - 1)], "hint");
   els.hintCount.textContent = `${state.hintsLeft} left`;
   els.hint.disabled = state.hintsLeft === 0;
 }
