@@ -209,7 +209,7 @@ function getPuzzleCandidates(mode = currentMode) {
     }
   }
   puzzleCandidatesByMode.set(mode, candidates);
-  return puzzleCandidates;
+  return candidates;
 }
 
 function chooseRandomPuzzle() {
@@ -217,6 +217,7 @@ function chooseRandomPuzzle() {
   const candidates = getPuzzleCandidates();
   if (!candidates.length) {
     const [start, target] = endpointPlayers;
+    if (!start || !target) return null;
     const path = shortestPath(start.id, target.id);
     return { start: start.id, target: target.id, par: Math.max((path?.length || 2) - 1, 1) };
   }
@@ -467,7 +468,13 @@ function giveUp() {
 
 function startNewPuzzle() {
   window.clearInterval(state.timerId);
-  Object.assign(puzzle, chooseRandomPuzzle());
+  const nextPuzzle = chooseRandomPuzzle();
+  if (!nextPuzzle) {
+    setFeedback("No matchup could be generated for this player pool.");
+    document.querySelector("#challengeTitle").innerHTML = "No <span>matchup</span> found";
+    return;
+  }
+  Object.assign(puzzle, nextPuzzle);
   Object.assign(state, {
     chain: [puzzle.start],
     hintsLeft: 3,
