@@ -406,7 +406,7 @@ function showHint() {
   state.hintsLeft -= 1;
   state.hintsUsed += 1;
   const next = playerById[path[1]];
-  const connection = findConnection(current, next);
+  const connection = findConnection(current, next.id);
   const teams = teamCount(next);
   const teamText = `${teams} ${teams === 1 ? "team" : "teams"}`;
   const hints = [
