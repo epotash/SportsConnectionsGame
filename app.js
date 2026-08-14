@@ -424,7 +424,7 @@ function showHint() {
   const current = state.chain[state.chain.length - 1];
   const path = shortestPath(current, puzzle.target);
   if (!path || path.length < 2) {
-    setFeedback("No hint path could be found from here.", "hint");
+    setFeedback("");
     setHint("No hint path could be found from here.");
     return;
   }
@@ -446,7 +446,7 @@ function showHint() {
       : `Strong clue: the player’s last name starts with “${lastName(next)[0]}”.`,
   ];
   const message = hints[Math.min(hintNumber - 1, hints.length - 1)];
-  setFeedback(message, "hint");
+  setFeedback("");
   setHint(message);
   els.hintCount.textContent = `${state.hintsLeft} left`;
   els.hint.disabled = state.hintsLeft === 0;
