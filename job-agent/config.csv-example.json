@@ -1,0 +1,19 @@
+{
+  "database": "jobs.sqlite3",
+  "queries": [
+    "entry level software engineer",
+    "entry level data analyst"
+  ],
+  "locations": [
+    "Remote"
+  ],
+  "minimum_entry_level_score": 2,
+  "providers": [
+    {
+      "name": "csv",
+      "enabled": true,
+      "path": "examples/jobs.csv",
+      "source": "manual_export"
+    }
+  ]
+}

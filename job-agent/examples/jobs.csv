@@ -1,0 +1,4 @@
+source,source_job_id,title,company,location,remote,url,description,posted_at
+example,example-1,Junior Data Analyst,Example Analytics,Remote,true,https://example.com/jobs/1,"Entry level analyst role using SQL and dashboards. 0-2 years experience.",2026-06-01
+example,example-2,Senior Software Engineer,Example Systems,New York NY,false,https://example.com/jobs/2,"Senior engineer role requiring 7+ years experience.",2026-06-01
+

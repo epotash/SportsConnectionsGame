@@ -1,0 +1,46 @@
+{
+  "database": "jobs.sqlite3",
+  "queries": [
+    "entry level software engineer",
+    "junior software developer",
+    "new grad software engineer",
+    "associate software engineer",
+    "entry level data analyst",
+    "junior data analyst",
+    "analytics engineer entry level",
+    "entry level data engineer",
+    "business intelligence analyst entry level"
+  ],
+  "locations": [
+    "Remote",
+    "New York, NY",
+    "Boston, MA",
+    "San Francisco, CA"
+  ],
+  "minimum_entry_level_score": 2,
+  "providers": [
+    {
+      "name": "remotive",
+      "enabled": true
+    },
+    {
+      "name": "jsearch",
+      "enabled": false,
+      "api_key_env": "RAPIDAPI_KEY",
+      "country": "us",
+      "date_posted": "week"
+    },
+    {
+      "name": "serpapi_google_jobs",
+      "enabled": false,
+      "api_key_env": "SERPAPI_KEY"
+    },
+    {
+      "name": "csv",
+      "enabled": false,
+      "path": "examples/jobs.csv",
+      "source": "manual_export"
+    }
+  ]
+}
+

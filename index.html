@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Connect established NHL players through verified teammate relationships."
+    />
+    <title>Lineage — The Teammate Connection Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260814a" />
+  </head>
+  <body>
+    <div class="ice-lines" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Lineage home">
+        <span class="brand-mark">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span>LINEAGE</span>
+      </a>
+
+      <div class="header-actions">
+        <button class="icon-button" id="howToPlayButton" type="button" aria-label="How to play">?</button>
+        <div class="streak-pill" title="Current streak">
+          <span class="flame">◆</span>
+          <strong id="streakCount">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero">
+        <div class="eyebrow"><span></span> Random hockey challenge</div>
+        <h1>Connect the <em>league.</em></h1>
+        <p>Build a chain between two established NHL players. Every link must be a real teammate.</p>
+      </section>
+
+      <div class="game-layout">
+        <section class="game-card" aria-labelledby="challengeTitle">
+          <div class="game-topbar">
+            <div>
+              <span class="section-kicker">Your matchup</span>
+              <h2 id="challengeTitle">Finding <span>a</span> matchup...</h2>
+              <div class="mode-toggle" aria-label="Player pool">
+                <button type="button" class="active" data-mode="full">Full</button>
+                <button type="button" data-mode="recent">Recent 2010+</button>
+              </div>
+            </div>
+            <div class="game-metrics">
+              <div>
+                <span>TIME</span>
+                <strong id="timer">00:00</strong>
+              </div>
+              <div>
+                <span>LINKS</span>
+                <strong id="linkCount">0</strong>
+              </div>
+              <div>
+                <span>PAR</span>
+                <strong id="parCount">—</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar"></div>
+          </div>
+
+          <div class="chain" id="chain" aria-live="polite"></div>
+
+          <div class="player-picker" id="playerPicker">
+            <label for="playerSearch">Add the next teammate</label>
+            <div class="search-shell">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" />
+              </svg>
+              <input
+                id="playerSearch"
+                type="search"
+                placeholder="Search a player..."
+                autocomplete="off"
+                aria-controls="searchResults"
+                aria-expanded="false"
+              />
+              <kbd>/</kbd>
+            </div>
+            <div class="search-results" id="searchResults" role="listbox"></div>
+            <p class="picker-feedback" id="pickerFeedback"></p>
+          </div>
+
+          <div class="game-actions">
+            <button class="text-button" id="undoButton" type="button" disabled>
+              <span>↶</span> Undo
+            </button>
+            <button class="hint-button" id="hintButton" type="button">
+              <span>✦</span> Get a hint <small id="hintCount">3 left</small>
+            </button>
+            <button class="give-up-button" id="giveUpButton" type="button">
+              Give up
+            </button>
+          </div>
+        </section>
+
+        <aside class="side-panel">
+          <section class="side-card goal-card">
+            <span class="section-kicker">The objective</span>
+            <h3>Find the shortest path.</h3>
+            <p id="objectiveCopy">Connect two eligible NHL players using players who shared an NHL roster.</p>
+            <div class="mini-rule">
+              <span class="rule-number">01</span>
+              <p>Pick any NHL teammate of the last player in your chain.</p>
+            </div>
+            <div class="mini-rule">
+              <span class="rule-number">02</span>
+              <p>Keep linking until you reach the target player.</p>
+            </div>
+          </section>
+
+          <section class="side-card stat-card">
+            <div class="stat-heading">
+              <span class="section-kicker">Your record</span>
+              <span class="record-dot"></span>
+            </div>
+            <div class="record-grid">
+              <div><strong id="playedStat">0</strong><span>Played</span></div>
+              <div><strong id="winStat">0%</strong><span>Win rate</span></div>
+              <div><strong id="bestStat">—</strong><span>Best</span></div>
+            </div>
+          </section>
+
+          <section class="side-card tomorrow-card">
+            <span>Matchup player pool</span>
+            <strong id="poolTitle">Established NHL careers</strong>
+            <small id="poolCopy">Endpoint minimums: 500+ skater / 200+ goalie games · Pre-1980–81 debut: 800+ / 400+</small>
+            <button id="newMatchupButton" type="button">Generate new matchup</button>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <span>LINEAGE / HOCKEY</span>
+      <span>Every player is connected.</span>
+      <button id="resetStatsButton" type="button">Reset stats</button>
+    </footer>
+
+    <dialog id="helpDialog">
+      <button class="dialog-close" data-close-dialog type="button" aria-label="Close">×</button>
+      <span class="section-kicker">How to play</span>
+      <h2>Connect two NHL players through teammates.</h2>
+      <ol>
+        <li>Start with the randomly selected player at the top of the chain.</li>
+        <li>Search for any NHL player who shared a team during an overlapping season.</li>
+        <li>Repeat until your last pick is the target athlete.</li>
+      </ol>
+      <p class="dialog-note">Full mode uses the whole endpoint pool. Recent 2010+ mode only chooses start and target players who debuted in 2010 or later. Any NHL player can still be used as a link.</p>
+    </dialog>
+
+    <dialog id="winDialog">
+      <div class="win-burst">✦</div>
+      <span class="section-kicker" id="dialogKicker">Connection complete</span>
+      <h2 id="winTitle">Great chain.</h2>
+      <p id="winSummary"></p>
+      <div class="shortest-path-card">
+        <span>Shortest path</span>
+        <p id="shortestPathCopy"></p>
+      </div>
+      <div class="win-score">
+        <div><strong id="winLinks">0</strong><span>Links</span></div>
+        <div><strong id="winTime">00:00</strong><span>Time</span></div>
+        <div><strong id="winHints">0</strong><span>Hints</span></div>
+      </div>
+      <button class="primary-button" id="shareButton" type="button">Share result</button>
+      <button class="secondary-button" id="playAgainButton" type="button">Play again</button>
+    </dialog>
+
+    <script src="data/players.js?v=20260814a"></script>
+    <script src="data/career-stats.js?v=20260814a"></script>
+    <script src="data/batches/bulk-20260617.js?v=20260814a"></script>
+    <script src="data.js?v=20260814a"></script>
+    <script src="app.js?v=20260814a"></script>
+  </body>
+</html>
