@@ -214,6 +214,22 @@ function getPuzzleCandidates(mode = currentMode) {
 
 function chooseRandomPuzzle() {
   const endpointPlayers = endpointPoolForMode();
+  const previousKey = `${puzzle.start}:${puzzle.target}`;
+  if (endpointPlayers.length < 2) return null;
+
+  for (let attempt = 0; attempt < 2500; attempt += 1) {
+    const start = endpointPlayers[Math.floor(Math.random() * endpointPlayers.length)];
+    const target = endpointPlayers[Math.floor(Math.random() * endpointPlayers.length)];
+    if (!start || !target || start.id === target.id) continue;
+    if (`${start.id}:${target.id}` === previousKey) continue;
+
+    const path = shortestPath(start.id, target.id);
+    const links = (path?.length || 0) - 1;
+    if (links >= 3 && links <= 5) {
+      return { start: start.id, target: target.id, par: links };
+    }
+  }
+
   const candidates = getPuzzleCandidates();
   if (!candidates.length) {
     const [start, target] = endpointPlayers;
@@ -222,7 +238,6 @@ function chooseRandomPuzzle() {
     return { start: start.id, target: target.id, par: Math.max((path?.length || 2) - 1, 1) };
   }
 
-  const previousKey = `${puzzle.start}:${puzzle.target}`;
   const freshCandidates = candidates.filter((candidate) => `${candidate.start}:${candidate.target}` !== previousKey);
   return freshCandidates[Math.floor(Math.random() * freshCandidates.length)] || candidates[0];
 }
