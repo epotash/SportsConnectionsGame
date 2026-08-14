@@ -4835,6 +4835,74 @@ window.lineagePlayers.push(...[
         to: 2012
       }
     ]
+  },
+  {
+    id: "luke-schenn",
+    name: "Luke Schenn",
+    position: "D",
+    color: "hsl(205 48% 38%)",
+    teams: [
+      {
+        team: "Toronto Maple Leafs",
+        from: 2008,
+        to: 2012
+      },
+      {
+        team: "Philadelphia Flyers",
+        from: 2012,
+        to: 2016
+      },
+      {
+        team: "Los Angeles Kings",
+        from: 2015,
+        to: 2016
+      },
+      {
+        team: "Arizona Coyotes",
+        from: 2016,
+        to: 2018
+      },
+      {
+        team: "Anaheim Ducks",
+        from: 2018,
+        to: 2019
+      },
+      {
+        team: "Vancouver Canucks",
+        from: 2018,
+        to: 2019
+      },
+      {
+        team: "Tampa Bay Lightning",
+        from: 2019,
+        to: 2021
+      },
+      {
+        team: "Vancouver Canucks",
+        from: 2021,
+        to: 2023
+      },
+      {
+        team: "Toronto Maple Leafs",
+        from: 2022,
+        to: 2023
+      },
+      {
+        team: "Nashville Predators",
+        from: 2023,
+        to: 2025
+      },
+      {
+        team: "Winnipeg Jets",
+        from: 2024,
+        to: 2025
+      },
+      {
+        team: "Buffalo Sabres",
+        from: 2025,
+        to: 2026
+      }
+    ]
   }
 ]);
 Object.assign(window.lineageCareerStats, {
@@ -6325,5 +6393,9 @@ Object.assign(window.lineageCareerStats, {
   "andy-delmore": [
     1998,
     980
+  ],
+  "luke-schenn": [
+    2008,
+    1122
   ]
 });
