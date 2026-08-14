@@ -450,6 +450,23 @@ button {
   display: block;
 }
 
+.hint-display {
+  display: none;
+  margin-top: 11px;
+  padding: 11px 12px;
+  border: 1px solid #d5e4d9;
+  border-radius: 9px;
+  color: var(--green-dark);
+  background: #edf7ef;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.hint-display.open {
+  display: block;
+}
+
 .result-item {
   width: 100%;
   padding: 11px 13px;

@@ -24,6 +24,7 @@ const els = {
   chain: document.querySelector("#chain"),
   search: document.querySelector("#playerSearch"),
   results: document.querySelector("#searchResults"),
+  hintDisplay: document.querySelector("#hintDisplay"),
   feedback: document.querySelector("#pickerFeedback"),
   timer: document.querySelector("#timer"),
   linkCount: document.querySelector("#linkCount"),
@@ -342,6 +343,11 @@ function setFeedback(message, type = "error") {
   els.feedback.className = `picker-feedback${type === "hint" ? " hint" : ""}`;
 }
 
+function setHint(message) {
+  els.hintDisplay.textContent = message;
+  els.hintDisplay.classList.toggle("open", Boolean(message));
+}
+
 function formatPath(path) {
   return path.map((id) => playerById[id].name).join(" → ");
 }
@@ -366,6 +372,7 @@ function addPlayer(id) {
   }
 
   setFeedback("");
+  setHint("");
   state.chain.push(id);
   if (id === puzzle.target) finishGame();
   renderChain();
@@ -400,7 +407,11 @@ function showHint() {
   beginTimer();
   const current = state.chain[state.chain.length - 1];
   const path = shortestPath(current, puzzle.target);
-  if (!path || path.length < 2) return;
+  if (!path || path.length < 2) {
+    setFeedback("No hint path could be found from here.", "hint");
+    setHint("No hint path could be found from here.");
+    return;
+  }
 
   const hintNumber = state.hintsUsed + 1;
   state.hintsLeft -= 1;
@@ -418,7 +429,9 @@ function showHint() {
       ? `Strong clue: they shared the ${connection.team} in ${connection.season}, and the player’s last name starts with “${lastName(next)[0]}”.`
       : `Strong clue: the player’s last name starts with “${lastName(next)[0]}”.`,
   ];
-  setFeedback(hints[Math.min(hintNumber - 1, hints.length - 1)], "hint");
+  const message = hints[Math.min(hintNumber - 1, hints.length - 1)];
+  setFeedback(message, "hint");
+  setHint(message);
   els.hintCount.textContent = `${state.hintsLeft} left`;
   els.hint.disabled = state.hintsLeft === 0;
 }
@@ -474,6 +487,7 @@ function startNewPuzzle() {
   els.winDialog.classList.remove("give-up-dialog");
   document.querySelector("#dialogKicker").textContent = "Connection complete";
   setFeedback("");
+  setHint("");
   updateModeCopy();
   updatePuzzleCopy();
   renderChain();
