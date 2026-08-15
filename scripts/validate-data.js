@@ -20,10 +20,16 @@ if (fs.existsSync(batchesDir)) {
   }
 }
 
-const nbaStarterFile = path.join(root, "data", "nba", "starter-pack.js");
-if (fs.existsSync(nbaStarterFile)) {
-  const source = fs.readFileSync(nbaStarterFile, "utf8");
-  vm.runInContext(source, sandbox, { filename: "data/nba/starter-pack.js" });
+const sportManifestFile = path.join(root, "data", "sports-manifest.js");
+if (fs.existsSync(sportManifestFile)) {
+  const source = fs.readFileSync(sportManifestFile, "utf8");
+  vm.runInContext(source, sandbox, { filename: "data/sports-manifest.js" });
+  for (const sport of Object.values(sandbox.window.lineageSportManifest || {})) {
+    for (const script of sport.scripts || []) {
+      const source = fs.readFileSync(path.join(root, script), "utf8");
+      vm.runInContext(source, sandbox, { filename: script });
+    }
+  }
 }
 
 const sports = {

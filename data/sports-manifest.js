@@ -7,6 +7,6 @@ window.lineageSportManifest = {
   nba: {
     id: "nba",
     label: "NBA",
-    scripts: ["data/nba/starter-pack.js"],
+    scripts: ["data/nba/starter-pack.js", "data/nba/expansion-20260815.js"],
   },
 };

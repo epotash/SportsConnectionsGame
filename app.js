@@ -23,7 +23,7 @@ const sportSettings = {
     heroCopy: "Build a chain between two established NBA players. Every link must be a real teammate.",
     footer: "LINEAGE / BASKETBALL",
     fullPoolTitle: "Established NBA careers",
-    fullPoolCopy: "Endpoint minimum: 400+ NBA games. Any NBA player in the starter pack can be a connector.",
+    fullPoolCopy: "Endpoint minimum: 500+ NBA games. Hall of Fame legends can be included even with pre-1980 debuts.",
     recentPoolTitle: "2010-present NBA careers",
     recentPoolCopy:
       "Start and target players debuted in 2010 or later and still meet the NBA endpoint minimum. Any NBA player can be a connector.",
@@ -94,7 +94,7 @@ function normalizeText(value) {
 
 function isEndpointEligible(player) {
   const [debut, gamesPlayed] = careerStats[player.id] || [];
-  if (currentSport === "nba") return gamesPlayed >= 400;
+  if (currentSport === "nba") return gamesPlayed >= 500;
 
   const debutedBefore1980 = debut < 1980;
   const minimumGames = player.position === "G"
@@ -158,7 +158,7 @@ function lastName(player) {
 function eligibilityLabel(player) {
   if (!isEndpointEligible(player)) return `${activeSettings().leagueName} player`;
   const [debut] = careerStats[player.id];
-  if (currentSport === "nba") return "400+ NBA games";
+  if (currentSport === "nba") return "500+ NBA games";
   if (player.position === "G") return debut < 1980 ? "400+ NHL games" : "200+ NHL games";
   return debut < 1980 ? "800+ NHL games" : "500+ NHL games";
 }
