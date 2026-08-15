@@ -7,6 +7,7 @@ Player data is split so the game can keep growing without turning `app.js` into 
 - `batches/*.js` can add large NHL groups without making the base files harder to scan.
 - `nba/starter-pack.js` contains the first NBA sport pack as `window.lineageSports.nba`.
 - `nba/expansion-YYYYMMDD.js` files append NBA batches after the starter pack.
+- `nba/generated-YYYYMMDD-*.js` files are bulk NBA imports generated from historical season data.
 - `data.js` registers the existing NHL data as `window.lineageSports.nhl`.
 - `sports-manifest.js` lists non-default sport scripts that the app lazy-loads when selected.
 - Team ranges are `[from, to)`, where `from` is the season start year.
@@ -18,4 +19,10 @@ After adding players, run:
 
 ```sh
 node scripts/validate-data.js
+```
+
+To regenerate the large NBA import from FiveThirtyEight's historical NBA CSV:
+
+```sh
+node scripts/generate-nba-batches.js /path/to/nba-data-historical.csv
 ```
