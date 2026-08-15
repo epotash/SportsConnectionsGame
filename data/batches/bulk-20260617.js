@@ -20,9 +20,19 @@ window.lineagePlayers.push(...[
     color: "hsl(268 48% 38%)",
     teams: [
       {
+        team: "Chicago Blackhawks",
+        from: 1963,
+        to: 1967
+      },
+      {
         team: "Boston Bruins",
-        from: 1970,
-        to: 1990
+        from: 1967,
+        to: 1976
+      },
+      {
+        team: "New York Rangers",
+        from: 1975,
+        to: 1981
       }
     ]
   },
@@ -1398,9 +1408,14 @@ window.lineagePlayers.push(...[
     color: "hsl(357 48% 38%)",
     teams: [
       {
+        team: "Montreal Canadiens",
+        from: 1968,
+        to: 1969
+      },
+      {
         team: "Chicago Blackhawks",
-        from: 1960,
-        to: 2005
+        from: 1969,
+        to: 1984
       }
     ]
   },
@@ -4911,8 +4926,8 @@ Object.assign(window.lineageCareerStats, {
     1400
   ],
   "phil-esposito": [
-    1970,
-    1400
+    1963,
+    1282
   ],
   "ken-hodge": [
     1970,
@@ -5335,8 +5350,8 @@ Object.assign(window.lineageCareerStats, {
     1450
   ],
   "tony-esposito": [
-    1960,
-    900
+    1968,
+    886
   ],
   "glenn-hall": [
     1960,
