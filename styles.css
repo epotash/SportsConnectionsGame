@@ -96,6 +96,33 @@ button {
   gap: 9px;
 }
 
+.sport-toggle {
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: flex;
+  gap: 4px;
+  background: var(--card);
+}
+
+.sport-toggle button {
+  min-width: 54px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.sport-toggle button.active {
+  color: white;
+  background: var(--ink);
+}
+
 .icon-button,
 .streak-pill {
   height: 38px;

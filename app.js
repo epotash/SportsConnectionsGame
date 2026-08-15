@@ -1,9 +1,31 @@
-const players = window.lineagePlayers || [];
-const careerStats = window.lineageCareerStats || {};
-const playerById = Object.fromEntries(players.map((player) => [player.id, player]));
-const endpointEligiblePlayers = {
-  full: players.filter(isEndpointEligible),
-  recent: players.filter((player) => isEndpointEligible(player) && isRecentEndpoint(player)),
+const sports = window.lineageSports || {};
+const sportSettings = {
+  nhl: {
+    label: "NHL",
+    leagueName: "NHL",
+    theme: "hockey",
+    eyebrow: "Random hockey challenge",
+    heroCopy: "Build a chain between two established NHL players. Every link must be a real teammate.",
+    footer: "LINEAGE / HOCKEY",
+    fullPoolTitle: "Established NHL careers",
+    fullPoolCopy: "Endpoint minimums: 500+ skater / 200+ goalie games · Pre-1980–81 debut: 800+ / 400+",
+    recentPoolTitle: "2010-present NHL careers",
+    recentPoolCopy:
+      "Start and target players debuted in 2010 or later and still meet endpoint games-played minimums. Any NHL player can be a connector.",
+  },
+  nba: {
+    label: "NBA",
+    leagueName: "NBA",
+    theme: "basketball",
+    eyebrow: "Random basketball challenge",
+    heroCopy: "Build a chain between two established NBA players. Every link must be a real teammate.",
+    footer: "LINEAGE / BASKETBALL",
+    fullPoolTitle: "Established NBA careers",
+    fullPoolCopy: "Endpoint minimum: 400+ NBA games. Any NBA player in the starter pack can be a connector.",
+    recentPoolTitle: "2010-present NBA careers",
+    recentPoolCopy:
+      "Start and target players debuted in 2010 or later and still meet the NBA endpoint minimum. Any NBA player can be a connector.",
+  },
 };
 const puzzle = { start: null, target: null, par: null };
 const state = {
@@ -16,7 +38,12 @@ const state = {
   started: false,
   timerId: null,
 };
+let currentSport = sports[localStorage.getItem("lineage-sport")] ? localStorage.getItem("lineage-sport") : "nhl";
 let currentMode = localStorage.getItem("lineage-mode") === "recent" ? "recent" : "full";
+let players = [];
+let careerStats = {};
+let playerById = {};
+let endpointEligiblePlayers = { full: [], recent: [] };
 let adjacencyById = null;
 const puzzleCandidatesByMode = new Map();
 
@@ -35,9 +62,17 @@ const els = {
   hintCount: document.querySelector("#hintCount"),
   winDialog: document.querySelector("#winDialog"),
   helpDialog: document.querySelector("#helpDialog"),
+  sportButtons: document.querySelectorAll("[data-sport]"),
   modeButtons: document.querySelectorAll("[data-mode]"),
   poolTitle: document.querySelector("#poolTitle"),
   poolCopy: document.querySelector("#poolCopy"),
+  eyebrow: document.querySelector("#sportEyebrow"),
+  heroCopy: document.querySelector("#heroCopy"),
+  footerLeague: document.querySelector("#footerLeague"),
+  helpTitle: document.querySelector("#helpTitle"),
+  helpLeagueCopy: document.querySelector("#helpLeagueCopy"),
+  helpModeCopy: document.querySelector("#helpModeCopy"),
+  ruleOneCopy: document.querySelector("#ruleOneCopy"),
 };
 
 function initials(name) {
@@ -57,6 +92,8 @@ function normalizeText(value) {
 
 function isEndpointEligible(player) {
   const [debut, gamesPlayed] = careerStats[player.id] || [];
+  if (currentSport === "nba") return gamesPlayed >= 400;
+
   const debutedBefore1980 = debut < 1980;
   const minimumGames = player.position === "G"
     ? debutedBefore1980 ? 400 : 200
@@ -69,13 +106,33 @@ function isRecentEndpoint(player) {
   return debut >= 2010;
 }
 
+function activeSettings() {
+  return sportSettings[currentSport] || sportSettings.nhl;
+}
+
+function loadSport(sportId) {
+  currentSport = sports[sportId] ? sportId : "nhl";
+  const sport = sports[currentSport] || sports.nhl;
+  players = sport.players || [];
+  careerStats = sport.careerStats || {};
+  playerById = Object.fromEntries(players.map((player) => [player.id, player]));
+  endpointEligiblePlayers = {
+    full: players.filter(isEndpointEligible),
+    recent: players.filter((player) => isEndpointEligible(player) && isRecentEndpoint(player)),
+  };
+  adjacencyById = null;
+  puzzleCandidatesByMode.clear();
+  localStorage.setItem("lineage-sport", currentSport);
+}
+
 function lastName(player) {
   return player.name.split(" ").at(-1);
 }
 
 function eligibilityLabel(player) {
-  if (!isEndpointEligible(player)) return "NHL player";
+  if (!isEndpointEligible(player)) return `${activeSettings().leagueName} player`;
   const [debut] = careerStats[player.id];
+  if (currentSport === "nba") return "400+ NBA games";
   if (player.position === "G") return debut < 1980 ? "400+ NHL games" : "200+ NHL games";
   return debut < 1980 ? "800+ NHL games" : "500+ NHL games";
 }
@@ -248,25 +305,38 @@ function updatePuzzleCopy() {
   document.querySelector("#challengeTitle").innerHTML = `${lastName(start)} <span>to</span> ${lastName(target)}`;
   document.querySelector("#parCount").textContent = puzzle.par;
   document.querySelector("#objectiveCopy").textContent =
-    `Connect ${start.name} to ${target.name} using any NHL players who shared a roster.`;
+    `Connect ${start.name} to ${target.name} using any ${activeSettings().leagueName} players who shared a roster.`;
 }
 
 function updateModeCopy() {
+  const settings = activeSettings();
+  document.body.dataset.sport = currentSport;
+  els.sportButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.sport === currentSport);
+    button.setAttribute("aria-pressed", String(button.dataset.sport === currentSport));
+  });
   els.modeButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.mode === currentMode);
     button.setAttribute("aria-pressed", String(button.dataset.mode === currentMode));
   });
 
+  els.eyebrow.innerHTML = `<span></span> ${settings.eyebrow}`;
+  els.heroCopy.textContent = settings.heroCopy;
+  els.footerLeague.textContent = settings.footer;
+  els.helpTitle.textContent = `Connect two ${settings.leagueName} players through teammates.`;
+  els.helpLeagueCopy.textContent = settings.leagueName;
+  els.helpModeCopy.textContent =
+    `Full mode uses the whole endpoint pool. 2010-present mode only chooses start and target players who debuted in 2010 or later. Any ${settings.leagueName} player can still be used as a link.`;
+  els.ruleOneCopy.textContent = `Pick any ${settings.leagueName} teammate of the last player in your chain.`;
+
   if (currentMode === "recent") {
-    els.poolTitle.textContent = "Recent NHL careers";
-    els.poolCopy.textContent =
-      "Start and target players debuted in 2010 or later and still meet endpoint games-played minimums. Any NHL player can be a connector.";
+    els.poolTitle.textContent = settings.recentPoolTitle;
+    els.poolCopy.textContent = settings.recentPoolCopy;
     return;
   }
 
-  els.poolTitle.textContent = "Established NHL careers";
-  els.poolCopy.textContent =
-    "Endpoint minimums: 500+ skater / 200+ goalie games · Pre-1980–81 debut: 800+ / 400+";
+  els.poolTitle.textContent = settings.fullPoolTitle;
+  els.poolCopy.textContent = settings.fullPoolCopy;
 }
 
 function playerEntry(player, index, isTarget = false) {
@@ -523,9 +593,20 @@ function setMode(mode) {
   startNewPuzzle();
 }
 
+function setSport(sportId) {
+  if (!sports[sportId] || sportId === currentSport) return;
+  loadSport(sportId);
+  startNewPuzzle();
+  renderStats();
+}
+
+function statsKey() {
+  return `lineage-stats-${currentSport}`;
+}
+
 function readStats() {
   try {
-    return JSON.parse(localStorage.getItem("lineage-stats")) || { played: 0, won: 0, best: null, streak: 0 };
+    return JSON.parse(localStorage.getItem(statsKey())) || { played: 0, won: 0, best: null, streak: 0 };
   } catch {
     return { played: 0, won: 0, best: null, streak: 0 };
   }
@@ -538,7 +619,7 @@ function saveResult() {
   stats.won += 1;
   stats.streak += 1;
   stats.best = stats.best === null ? links : Math.min(stats.best, links);
-  localStorage.setItem("lineage-stats", JSON.stringify(stats));
+  localStorage.setItem(statsKey(), JSON.stringify(stats));
   renderStats();
 }
 
@@ -546,7 +627,7 @@ function saveGiveUp() {
   const stats = readStats();
   stats.played += 1;
   stats.streak = 0;
-  localStorage.setItem("lineage-stats", JSON.stringify(stats));
+  localStorage.setItem(statsKey(), JSON.stringify(stats));
   renderStats();
 }
 
@@ -562,7 +643,7 @@ function shareResult() {
   if (!state.won) return;
   const boxes = state.chain.slice(1).map(() => "🟩").join("");
   const text =
-    `LINEAGE / HOCKEY\n${lastName(playerById[puzzle.start])} → ${lastName(playerById[puzzle.target])}\n` +
+    `${activeSettings().footer}\n${lastName(playerById[puzzle.start])} → ${lastName(playerById[puzzle.target])}\n` +
     `${boxes}\n${state.chain.length - 1} links · ${formatTime(state.seconds)}`;
   if (navigator.share) {
     navigator.share({ title: "Lineage Hockey", text }).catch(() => {});
@@ -590,6 +671,9 @@ els.undo.addEventListener("click", () => {
 });
 els.hint.addEventListener("click", showHint);
 els.giveUp.addEventListener("click", giveUp);
+els.sportButtons.forEach((button) => {
+  button.addEventListener("click", () => setSport(button.dataset.sport));
+});
 els.modeButtons.forEach((button) => {
   button.addEventListener("click", () => setMode(button.dataset.mode));
 });
@@ -601,7 +685,7 @@ document.querySelector("#playAgainButton").addEventListener("click", startNewPuz
 document.querySelector("#newMatchupButton").addEventListener("click", startNewPuzzle);
 document.querySelector("#shareButton").addEventListener("click", shareResult);
 document.querySelector("#resetStatsButton").addEventListener("click", () => {
-  localStorage.removeItem("lineage-stats");
+  localStorage.removeItem(statsKey());
   renderStats();
 });
 document.addEventListener("click", (event) => {
@@ -618,5 +702,6 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") els.results.classList.remove("open");
 });
 
+loadSport(currentSport);
 startNewPuzzle();
 renderStats();
