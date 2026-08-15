@@ -1,4 +1,6 @@
 const sports = window.lineageSports || {};
+const sportManifest = window.lineageSportManifest || {};
+const loadedSportScripts = new Set();
 const sportSettings = {
   nhl: {
     label: "NHL",
@@ -38,7 +40,7 @@ const state = {
   started: false,
   timerId: null,
 };
-let currentSport = sports[localStorage.getItem("lineage-sport")] ? localStorage.getItem("lineage-sport") : "nhl";
+let currentSport = "nhl";
 let currentMode = localStorage.getItem("lineage-mode") === "recent" ? "recent" : "full";
 let players = [];
 let careerStats = {};
@@ -108,6 +110,30 @@ function isRecentEndpoint(player) {
 
 function activeSettings() {
   return sportSettings[currentSport] || sportSettings.nhl;
+}
+
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const version = window.lineageAssetVersion || "dev";
+    const script = document.createElement("script");
+    script.src = `${src}?v=${version}`;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Could not load ${src}`));
+    document.body.append(script);
+  });
+}
+
+async function ensureSportLoaded(sportId) {
+  if (sports[sportId]) return true;
+  const manifest = sportManifest[sportId];
+  if (!manifest) return false;
+
+  for (const src of manifest.scripts || []) {
+    if (loadedSportScripts.has(src)) continue;
+    await loadScript(src);
+    loadedSportScripts.add(src);
+  }
+  return Boolean(sports[sportId]);
 }
 
 function loadSport(sportId) {
@@ -593,7 +619,16 @@ function setMode(mode) {
   startNewPuzzle();
 }
 
-function setSport(sportId) {
+async function setSport(sportId) {
+  if (sportId === currentSport) return;
+  const button = Array.from(els.sportButtons).find((sportButton) => sportButton.dataset.sport === sportId);
+  if (button) button.disabled = true;
+  const loaded = await ensureSportLoaded(sportId).catch(() => false);
+  if (button) button.disabled = false;
+  if (!loaded) {
+    setFeedback(`Could not load ${sportSettings[sportId]?.leagueName || "that sport"} data.`);
+    return;
+  }
   if (!sports[sportId] || sportId === currentSport) return;
   loadSport(sportId);
   startNewPuzzle();
@@ -702,6 +737,12 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") els.results.classList.remove("open");
 });
 
-loadSport(currentSport);
-startNewPuzzle();
-renderStats();
+async function init() {
+  const preferredSport = localStorage.getItem("lineage-sport") || "nhl";
+  await ensureSportLoaded(preferredSport).catch(() => false);
+  loadSport(sports[preferredSport] ? preferredSport : "nhl");
+  startNewPuzzle();
+  renderStats();
+}
+
+init();
