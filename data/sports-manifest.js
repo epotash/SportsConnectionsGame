@@ -16,6 +16,10 @@ window.lineageSportManifest = {
       "data/nba/generated-20260815-d.js",
       "data/nba/generated-20260815-e.js",
       "data/nba/generated-20260815-f.js",
+      "data/nba/generated-20260815-g.js",
+      "data/nba/generated-20260815-h.js",
+      "data/nba/generated-20260815-i.js",
+      "data/nba/generated-20260815-j.js",
     ],
   },
 };

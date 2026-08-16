@@ -16,6 +16,7 @@ const targetTotal = Number(targetTotalArg) || 500;
 const batchSize = Number(process.env.NBA_BATCH_SIZE) || 100;
 const minDebut = Number(process.env.NBA_MIN_DEBUT) || 1980;
 const maxDebut = Number(process.env.NBA_MAX_DEBUT) || Infinity;
+const minGames = Number(process.env.NBA_MIN_GAMES) || 500;
 const pickStrategy = process.env.NBA_PICK_STRATEGY || "balanced";
 const startSuffixCode = startSuffixArg.toLowerCase().charCodeAt(0);
 
@@ -276,7 +277,7 @@ const candidates = [...byPlayer.entries()]
   .filter((player) => {
     if (player.debut < minDebut) return false;
     if (player.debut > maxDebut) return false;
-    if (player.games < 500) return false;
+    if (player.games < minGames) return false;
     if (player.teams.length === 0) return false;
     if (existingNames.has(player.normalizedName)) return false;
     if (existingIds.has(player.id)) return false;
