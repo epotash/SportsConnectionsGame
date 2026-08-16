@@ -2,16 +2,22 @@ const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
 
-const [, , csvPathArg] = process.argv;
+const [, , csvPathArg, targetTotalArg, startSuffixArg = "a"] = process.argv;
 if (!csvPathArg) {
-  console.error("Usage: node scripts/generate-nba-batches.js /path/to/nba-data-historical.csv");
+  console.error(
+    "Usage: node scripts/generate-nba-batches.js /path/to/nba-data-historical.csv [target-total] [start-suffix]",
+  );
   process.exit(1);
 }
 
 const root = path.resolve(__dirname, "..");
 const csvPath = path.resolve(csvPathArg);
-const targetTotal = 500;
-const batchSize = 100;
+const targetTotal = Number(targetTotalArg) || 500;
+const batchSize = Number(process.env.NBA_BATCH_SIZE) || 100;
+const minDebut = Number(process.env.NBA_MIN_DEBUT) || 1980;
+const maxDebut = Number(process.env.NBA_MAX_DEBUT) || Infinity;
+const pickStrategy = process.env.NBA_PICK_STRATEGY || "balanced";
+const startSuffixCode = startSuffixArg.toLowerCase().charCodeAt(0);
 
 const teamNames = {
   ATL: "Atlanta Hawks",
@@ -164,7 +170,7 @@ function mergeSeasons(seasons) {
 
   for (const season of sorted) {
     const current = ranges[ranges.length - 1];
-    if (current && season <= current[1]) continue;
+    if (current && season < current[1]) continue;
     if (current && season === current[1]) {
       current[1] = season + 1;
     } else {
@@ -180,7 +186,14 @@ function loadExistingNba() {
     window: { lineageSports: {} },
   };
   vm.createContext(sandbox);
-  for (const file of ["data/nba/starter-pack.js", "data/nba/expansion-20260815.js"]) {
+  vm.runInContext(fs.readFileSync(path.join(root, "data/sports-manifest.js"), "utf8"), sandbox, {
+    filename: "data/sports-manifest.js",
+  });
+  const scripts =
+    process.env.NBA_BASE_ONLY === "1"
+      ? ["data/nba/starter-pack.js", "data/nba/expansion-20260815.js"]
+      : sandbox.window.lineageSportManifest.nba.scripts;
+  for (const file of scripts) {
     vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), sandbox, { filename: file });
   }
   return sandbox.window.lineageSports.nba;
@@ -223,12 +236,15 @@ for (const row of rows) {
       positions: new Map(),
       teams: new Map(),
       games: 0,
+      war: 0,
       debut: season,
     });
   }
 
   const player = byPlayer.get(id);
+  const war = Number(row[column["Raptor WAR"]]) || 0;
   player.games += games;
+  player.war += war;
   player.debut = Math.min(player.debut, season);
   player.positions.set(position, (player.positions.get(position) || 0) + games);
   player.teams.set(team, [...(player.teams.get(team) || []), season]);
@@ -253,11 +269,13 @@ const candidates = [...byPlayer.entries()]
       teams,
       debut: player.debut,
       games: player.games,
+      war: player.war,
       decade: Math.floor(player.debut / 10) * 10,
     };
   })
   .filter((player) => {
-    if (player.debut < 1980) return false;
+    if (player.debut < minDebut) return false;
+    if (player.debut > maxDebut) return false;
     if (player.games < 500) return false;
     if (player.teams.length === 0) return false;
     if (existingNames.has(player.normalizedName)) return false;
@@ -265,21 +283,30 @@ const candidates = [...byPlayer.entries()]
     return true;
   });
 
-const buckets = new Map();
-for (const candidate of candidates.sort((a, b) => b.games - a.games || a.name.localeCompare(b.name))) {
-  const key = `${candidate.decade}-${candidate.position}`;
-  if (!buckets.has(key)) buckets.set(key, []);
-  buckets.get(key).push(candidate);
-}
-
-const bucketKeys = [...buckets.keys()].sort();
 const selected = [];
-while (selected.length < needed && bucketKeys.some((key) => buckets.get(key).length)) {
-  for (const key of bucketKeys) {
-    const bucket = buckets.get(key);
-    if (!bucket.length) continue;
-    selected.push(bucket.shift());
-    if (selected.length === needed) break;
+
+if (pickStrategy === "impact") {
+  selected.push(
+    ...candidates
+      .sort((a, b) => b.war - a.war || b.games - a.games || a.name.localeCompare(b.name))
+      .slice(0, needed),
+  );
+} else {
+  const buckets = new Map();
+  for (const candidate of candidates.sort((a, b) => b.games - a.games || a.name.localeCompare(b.name))) {
+    const key = `${candidate.decade}-${candidate.position}`;
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(candidate);
+  }
+
+  const bucketKeys = [...buckets.keys()].sort();
+  while (selected.length < needed && bucketKeys.some((key) => buckets.get(key).length)) {
+    for (const key of bucketKeys) {
+      const bucket = buckets.get(key);
+      if (!bucket.length) continue;
+      selected.push(bucket.shift());
+      if (selected.length === needed) break;
+    }
   }
 }
 
@@ -294,7 +321,7 @@ for (let index = 0; index < selected.length; index += batchSize) {
 }
 
 for (const [index, chunk] of chunks.entries()) {
-  const suffix = String.fromCharCode("a".charCodeAt(0) + index);
+  const suffix = String.fromCharCode(startSuffixCode + index);
   const rowsName = `nbaGeneratedRows20260815${suffix.toUpperCase()}`;
   const sportName = `nbaGeneratedSport20260815${suffix.toUpperCase()}`;
   const filePath = path.join(root, `data/nba/generated-20260815-${suffix}.js`);
@@ -318,7 +345,7 @@ console.log(
       added: selected.length,
       total: existingNba.players.length + selected.length,
       batches: chunks.map((chunk, index) => ({
-        file: `data/nba/generated-20260815-${String.fromCharCode("a".charCodeAt(0) + index)}.js`,
+        file: `data/nba/generated-20260815-${String.fromCharCode(startSuffixCode + index)}.js`,
         players: chunk.length,
       })),
     },

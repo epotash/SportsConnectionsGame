@@ -9,46 +9,21 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         1996,
-        1997
-      ],
-      [
-        "Minnesota Timberwolves",
-        1998,
         1999
       ],
       [
         "New Jersey Nets",
         1998,
-        1999
-      ],
-      [
-        "New Jersey Nets",
-        2000,
         2001
       ],
       [
         "Phoenix Suns",
         2001,
-        2002
-      ],
-      [
-        "New York Knicks",
-        2003,
-        2004
-      ],
-      [
-        "Phoenix Suns",
-        2003,
         2004
       ],
       [
         "New York Knicks",
-        2005,
-        2006
-      ],
-      [
-        "New York Knicks",
-        2007,
+        2003,
         2008
       ],
       [
@@ -69,32 +44,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         2005,
-        2006
-      ],
-      [
-        "Houston Rockets",
-        2007,
-        2008
-      ],
-      [
-        "Houston Rockets",
-        2009,
-        2010
+        2011
       ],
       [
         "Sacramento Kings",
         2011,
-        2012
-      ],
-      [
-        "Sacramento Kings",
-        2013,
         2014
       ],
       [
         "Toronto Raptors",
         2013,
-        2014
+        2015
       ],
       [
         "Houston Rockets",
@@ -114,12 +74,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         2007,
-        2008
-      ],
-      [
-        "Minnesota Timberwolves",
-        2009,
-        2010
+        2011
       ],
       [
         "Dallas Mavericks",
@@ -129,27 +84,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         2011,
-        2012
+        2013
       ],
       [
         "Minnesota Timberwolves",
         2013,
-        2014
-      ],
-      [
-        "Houston Rockets",
-        2014,
         2015
       ],
       [
         "Houston Rockets",
-        2016,
+        2014,
         2017
       ],
       [
         "Los Angeles Lakers",
         2016,
-        2017
+        2018
       ],
       [
         "Oklahoma City Thunder",
@@ -164,7 +114,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Sacramento Kings",
         2018,
-        2019
+        2020
       ]
     ],
     2007,
@@ -179,42 +129,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Dallas Mavericks",
         2006,
-        2007
-      ],
-      [
-        "Dallas Mavericks",
-        2008,
-        2009
-      ],
-      [
-        "Dallas Mavericks",
-        2010,
         2011
       ],
       [
         "Minnesota Timberwolves",
         2011,
-        2012
-      ],
-      [
-        "Minnesota Timberwolves",
-        2013,
         2014
       ],
       [
         "Dallas Mavericks",
         2014,
-        2015
-      ],
-      [
-        "Dallas Mavericks",
-        2016,
-        2017
-      ],
-      [
-        "Dallas Mavericks",
-        2018,
-        2019
+        2020
       ]
     ],
     2006,
@@ -229,12 +154,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Phoenix Suns",
         1988,
-        1989
-      ],
-      [
-        "Phoenix Suns",
-        1990,
-        1991
+        1992
       ],
       [
         "Philadelphia 76ers",
@@ -244,11 +164,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Atlanta Hawks",
         1993,
-        1994
-      ],
-      [
-        "Atlanta Hawks",
-        1995,
         1996
       ],
       [
@@ -259,7 +174,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         1996,
-        1997
+        1998
       ],
       [
         "Chicago Bulls",
@@ -284,37 +199,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Seattle SuperSonics",
         1989,
-        1990
-      ],
-      [
-        "Seattle SuperSonics",
-        1991,
-        1992
-      ],
-      [
-        "Seattle SuperSonics",
-        1993,
-        1994
-      ],
-      [
-        "Seattle SuperSonics",
-        1995,
-        1996
+        1997
       ],
       [
         "Cleveland Cavaliers",
         1997,
-        1998
-      ],
-      [
-        "Cleveland Cavaliers",
-        1999,
         2000
       ],
       [
         "Portland Trail Blazers",
         2000,
-        2001
+        2002
       ],
       [
         "Orlando Magic",
@@ -334,21 +229,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Phoenix Suns",
         1988,
-        1989
-      ],
-      [
-        "Phoenix Suns",
-        1990,
-        1991
-      ],
-      [
-        "Phoenix Suns",
-        1992,
-        1993
-      ],
-      [
-        "Phoenix Suns",
-        1994,
         1995
       ],
       [
@@ -359,16 +239,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         1996,
-        1997
-      ],
-      [
-        "Miami Heat",
-        1998,
-        1999
-      ],
-      [
-        "Miami Heat",
-        2000,
         2001
       ],
       [
@@ -389,31 +259,21 @@ const nbaGeneratedRows20260815C = [
       [
         "Golden State Warriors",
         1995,
-        1996
+        1997
       ],
       [
         "Boston Celtics",
         1997,
-        1998
+        1999
       ],
       [
         "Cleveland Cavaliers",
         1998,
-        1999
+        2000
       ],
       [
         "Orlando Magic",
         2000,
-        2001
-      ],
-      [
-        "Orlando Magic",
-        2002,
-        2003
-      ],
-      [
-        "Orlando Magic",
-        2004,
         2005
       ]
     ],
@@ -429,37 +289,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Indiana Pacers",
         1993,
-        1994
-      ],
-      [
-        "Indiana Pacers",
-        1995,
-        1996
-      ],
-      [
-        "Indiana Pacers",
-        1997,
-        1998
+        1999
       ],
       [
         "Toronto Raptors",
         1999,
-        2000
-      ],
-      [
-        "Toronto Raptors",
-        2001,
-        2002
+        2004
       ],
       [
         "Chicago Bulls",
         2003,
-        2004
-      ],
-      [
-        "Toronto Raptors",
-        2003,
-        2004
+        2005
       ],
       [
         "New York Knicks",
@@ -484,37 +324,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         1994,
-        1995
-      ],
-      [
-        "Orlando Magic",
-        1996,
-        1997
-      ],
-      [
-        "Orlando Magic",
-        1998,
-        1999
-      ],
-      [
-        "Orlando Magic",
-        2000,
-        2001
-      ],
-      [
-        "Orlando Magic",
-        2002,
         2003
       ],
       [
         "New Orleans Hornets",
         2003,
-        2004
+        2005
       ],
       [
         "Dallas Mavericks",
         2004,
-        2005
+        2006
       ],
       [
         "Indiana Pacers",
@@ -539,26 +359,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Detroit Pistons",
         2002,
-        2003
+        2004
       ],
       [
         "Utah Jazz",
         2004,
-        2005
-      ],
-      [
-        "Utah Jazz",
-        2006,
-        2007
-      ],
-      [
-        "Utah Jazz",
-        2008,
-        2009
-      ],
-      [
-        "Utah Jazz",
-        2010,
         2011
       ],
       [
@@ -579,27 +384,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         2002,
-        2003
-      ],
-      [
-        "Miami Heat",
-        2004,
         2005
       ],
       [
         "New Orleans Hornets",
         2005,
-        2006
-      ],
-      [
-        "New Orleans Hornets",
-        2007,
-        2008
+        2009
       ],
       [
         "Los Angeles Clippers",
         2009,
-        2010
+        2011
       ],
       [
         "Chicago Bulls",
@@ -639,31 +434,16 @@ const nbaGeneratedRows20260815C = [
       [
         "Seattle SuperSonics",
         2003,
-        2004
-      ],
-      [
-        "Seattle SuperSonics",
-        2005,
-        2006
-      ],
-      [
-        "Seattle SuperSonics",
-        2007,
         2008
       ],
       [
         "Milwaukee Bucks",
         2008,
-        2009
+        2010
       ],
       [
         "Minnesota Timberwolves",
         2010,
-        2011
-      ],
-      [
-        "Minnesota Timberwolves",
-        2012,
         2013
       ],
       [
@@ -694,7 +474,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Seattle SuperSonics",
         1984,
-        1985
+        1986
       ],
       [
         "Los Angeles Lakers",
@@ -704,22 +484,12 @@ const nbaGeneratedRows20260815C = [
       [
         "San Antonio Spurs",
         1986,
-        1987
-      ],
-      [
-        "San Antonio Spurs",
-        1988,
-        1989
+        1990
       ],
       [
         "Milwaukee Bucks",
         1990,
-        1991
-      ],
-      [
-        "Milwaukee Bucks",
-        1992,
-        1993
+        1994
       ],
       [
         "Charlotte Hornets",
@@ -749,32 +519,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         1988,
-        1989
-      ],
-      [
-        "Miami Heat",
-        1990,
-        1991
-      ],
-      [
-        "Miami Heat",
-        1992,
-        1993
+        1995
       ],
       [
         "Atlanta Hawks",
         1994,
-        1995
-      ],
-      [
-        "Miami Heat",
-        1994,
-        1995
+        1996
       ],
       [
         "Detroit Pistons",
         1996,
-        1997
+        1998
       ],
       [
         "Atlanta Hawks",
@@ -784,7 +539,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Vancouver Grizzlies",
         1999,
-        2000
+        2001
       ],
       [
         "Memphis Grizzlies",
@@ -809,41 +564,21 @@ const nbaGeneratedRows20260815C = [
       [
         "Philadelphia 76ers",
         1983,
-        1984
-      ],
-      [
-        "Philadelphia 76ers",
-        1985,
-        1986
+        1987
       ],
       [
         "Chicago Bulls",
         1986,
-        1987
-      ],
-      [
-        "Seattle SuperSonics",
-        1987,
         1988
       ],
       [
         "Seattle SuperSonics",
-        1989,
-        1990
+        1987,
+        1991
       ],
       [
         "Los Angeles Lakers",
         1991,
-        1992
-      ],
-      [
-        "Los Angeles Lakers",
-        1993,
-        1994
-      ],
-      [
-        "Los Angeles Lakers",
-        1995,
         1996
       ],
       [
@@ -864,11 +599,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         1998,
-        1999
-      ],
-      [
-        "Orlando Magic",
-        2000,
         2001
       ],
       [
@@ -879,7 +609,7 @@ const nbaGeneratedRows20260815C = [
       [
         "New York Knicks",
         2002,
-        2003
+        2004
       ],
       [
         "Denver Nuggets",
@@ -889,11 +619,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         2004,
-        2005
-      ],
-      [
-        "Miami Heat",
-        2006,
         2007
       ],
       [
@@ -914,21 +639,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Boston Celtics",
         1996,
-        1997
-      ],
-      [
-        "Boston Celtics",
-        1998,
-        1999
-      ],
-      [
-        "Boston Celtics",
-        2000,
-        2001
-      ],
-      [
-        "Boston Celtics",
-        2002,
         2003
       ],
       [
@@ -949,7 +659,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         2005,
-        2006
+        2007
       ],
       [
         "Minnesota Timberwolves",
@@ -969,36 +679,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Detroit Pistons",
         1993,
-        1994
-      ],
-      [
-        "Detroit Pistons",
-        1995,
         1996
       ],
       [
         "New York Knicks",
         1996,
-        1997
-      ],
-      [
-        "New York Knicks",
-        1998,
-        1999
-      ],
-      [
-        "New York Knicks",
-        2000,
-        2001
-      ],
-      [
-        "New York Knicks",
-        2002,
-        2003
-      ],
-      [
-        "New York Knicks",
-        2004,
         2005
       ]
     ],
@@ -1014,21 +699,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         2002,
-        2003
-      ],
-      [
-        "Los Angeles Clippers",
-        2004,
-        2005
-      ],
-      [
-        "Seattle SuperSonics",
-        2005,
         2006
       ],
       [
         "Seattle SuperSonics",
-        2007,
+        2005,
         2008
       ],
       [
@@ -1044,12 +719,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Detroit Pistons",
         2009,
-        2010
+        2011
       ],
       [
         "Boston Celtics",
         2011,
-        2012
+        2013
       ]
     ],
     2002,
@@ -1064,27 +739,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Seattle SuperSonics",
         2002,
-        2003
-      ],
-      [
-        "Seattle SuperSonics",
-        2004,
-        2005
+        2006
       ],
       [
         "Denver Nuggets",
         2005,
-        2006
+        2007
       ],
       [
         "Philadelphia 76ers",
         2007,
-        2008
+        2009
       ],
       [
         "Toronto Raptors",
         2009,
-        2010
+        2011
       ],
       [
         "Los Angeles Clippers",
@@ -1094,12 +764,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Brooklyn Nets",
         2012,
-        2013
+        2014
       ],
       [
         "Sacramento Kings",
         2013,
-        2014
+        2015
       ]
     ],
     2002,
@@ -1114,37 +784,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Utah Jazz",
         2000,
-        2001
-      ],
-      [
-        "Utah Jazz",
-        2002,
-        2003
-      ],
-      [
-        "Orlando Magic",
-        2003,
         2004
       ],
       [
         "Orlando Magic",
-        2005,
+        2003,
         2006
       ],
       [
         "Washington Wizards",
         2006,
-        2007
-      ],
-      [
-        "Washington Wizards",
-        2008,
-        2009
+        2010
       ],
       [
         "Dallas Mavericks",
         2009,
-        2010
+        2011
       ],
       [
         "New Jersey Nets",
@@ -1179,26 +834,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Bullets",
         1984,
-        1985
-      ],
-      [
-        "Washington Bullets",
-        1986,
-        1987
-      ],
-      [
-        "Washington Bullets",
-        1988,
-        1989
-      ],
-      [
-        "Washington Bullets",
-        1990,
-        1991
-      ],
-      [
-        "Washington Bullets",
-        1992,
         1993
       ],
       [
@@ -1209,12 +844,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         1994,
-        1995
-      ],
-      [
-        "Houston Rockets",
-        1996,
-        1997
+        1998
       ]
     ],
     1983,
@@ -1229,32 +859,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         1989,
-        1990
-      ],
-      [
-        "Miami Heat",
-        1991,
-        1992
-      ],
-      [
-        "Miami Heat",
-        1993,
-        1994
+        1995
       ],
       [
         "Charlotte Hornets",
         1995,
-        1996
-      ],
-      [
-        "Charlotte Hornets",
-        1997,
         1998
       ],
       [
         "Los Angeles Lakers",
         1998,
-        1999
+        2000
       ],
       [
         "New York Knicks",
@@ -1264,7 +879,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         2001,
-        2002
+        2003
       ],
       [
         "Los Angeles Clippers",
@@ -1289,26 +904,16 @@ const nbaGeneratedRows20260815C = [
       [
         "Boston Celtics",
         1990,
-        1991
-      ],
-      [
-        "Miami Heat",
-        1991,
         1992
       ],
       [
         "Miami Heat",
-        1993,
+        1991,
         1994
       ],
       [
         "Orlando Magic",
         1994,
-        1995
-      ],
-      [
-        "Orlando Magic",
-        1996,
         1997
       ],
       [
@@ -1329,12 +934,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Lakers",
         1999,
-        2000
-      ],
-      [
-        "Los Angeles Lakers",
-        2001,
-        2002
+        2003
       ]
     ],
     1988,
@@ -1349,32 +949,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         1991,
-        1992
-      ],
-      [
-        "Chicago Bulls",
-        1993,
-        1994
-      ],
-      [
-        "Minnesota Timberwolves",
-        1993,
         1994
       ],
       [
         "Chicago Bulls",
-        1995,
-        1996
-      ],
-      [
-        "Chicago Bulls",
-        1997,
+        1993,
         1998
       ],
       [
         "Phoenix Suns",
         1998,
-        1999
+        2000
       ],
       [
         "New York Knicks",
@@ -1394,16 +979,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Dallas Mavericks",
         1992,
-        1993
-      ],
-      [
-        "Dallas Mavericks",
-        1994,
-        1995
-      ],
-      [
-        "Dallas Mavericks",
-        1996,
         1997
       ],
       [
@@ -1429,7 +1004,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Atlanta Hawks",
         1999,
-        2000
+        2001
       ],
       [
         "Cleveland Cavaliers",
@@ -1449,12 +1024,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         2003,
-        2004
+        2005
       ],
       [
         "Phoenix Suns",
         2004,
-        2005
+        2006
       ],
       [
         "Los Angeles Lakers",
@@ -1474,32 +1049,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Lakers",
         1992,
-        1993
-      ],
-      [
-        "Los Angeles Lakers",
-        1994,
-        1995
+        1996
       ],
       [
         "Vancouver Grizzlies",
         1996,
-        1997
-      ],
-      [
-        "Minnesota Timberwolves",
-        1997,
         1998
       ],
       [
         "Minnesota Timberwolves",
-        1999,
-        2000
-      ],
-      [
-        "Minnesota Timberwolves",
-        2001,
-        2002
+        1997,
+        2003
       ],
       [
         "Sacramento Kings",
@@ -1524,37 +1084,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Cleveland Cavaliers",
         2004,
-        2005
-      ],
-      [
-        "Cleveland Cavaliers",
-        2006,
-        2007
-      ],
-      [
-        "Cleveland Cavaliers",
-        2008,
-        2009
-      ],
-      [
-        "Cleveland Cavaliers",
-        2010,
-        2011
-      ],
-      [
-        "Cleveland Cavaliers",
-        2012,
-        2013
-      ],
-      [
-        "Cleveland Cavaliers",
-        2014,
-        2015
+        2016
       ],
       [
         "Golden State Warriors",
         2015,
-        2016
+        2017
       ]
     ],
     2004,
@@ -1574,17 +1109,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         2009,
-        2010
-      ],
-      [
-        "Milwaukee Bucks",
-        2011,
-        2012
-      ],
-      [
-        "Milwaukee Bucks",
-        2013,
-        2014
+        2015
       ],
       [
         "Detroit Pistons",
@@ -1599,7 +1124,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Atlanta Hawks",
         2016,
-        2017
+        2018
       ],
       [
         "Oklahoma City Thunder",
@@ -1609,12 +1134,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Philadelphia 76ers",
         2016,
-        2017
+        2018
       ],
       [
         "Milwaukee Bucks",
         2018,
-        2019
+        2020
       ]
     ],
     2006,
@@ -1634,27 +1159,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         2004,
-        2005
-      ],
-      [
-        "Milwaukee Bucks",
-        2006,
-        2007
+        2008
       ],
       [
         "Cleveland Cavaliers",
         2008,
-        2009
-      ],
-      [
-        "Cleveland Cavaliers",
-        2010,
         2011
       ],
       [
         "Los Angeles Clippers",
         2010,
-        2011
+        2012
       ],
       [
         "Utah Jazz",
@@ -1694,16 +1209,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Dallas Mavericks",
         1985,
-        1986
-      ],
-      [
-        "Dallas Mavericks",
-        1987,
-        1988
-      ],
-      [
-        "Dallas Mavericks",
-        1989,
         1990
       ],
       [
@@ -1714,17 +1219,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Chicago Bulls",
         1993,
-        1994
-      ],
-      [
-        "Chicago Bulls",
-        1995,
-        1996
-      ],
-      [
-        "Chicago Bulls",
-        1997,
-        1998
+        1999
       ],
       [
         "Sacramento Kings",
@@ -1744,41 +1239,16 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         1989,
-        1990
-      ],
-      [
-        "Minnesota Timberwolves",
-        1991,
         1992
       ],
       [
         "Indiana Pacers",
         1992,
-        1993
-      ],
-      [
-        "Indiana Pacers",
-        1994,
         1995
       ],
       [
         "Minnesota Timberwolves",
         1995,
-        1996
-      ],
-      [
-        "Minnesota Timberwolves",
-        1997,
-        1998
-      ],
-      [
-        "Minnesota Timberwolves",
-        1999,
-        2000
-      ],
-      [
-        "Minnesota Timberwolves",
-        2001,
         2002
       ]
     ],
@@ -1799,12 +1269,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Cleveland Cavaliers",
         1989,
-        1990
-      ],
-      [
-        "Cleveland Cavaliers",
-        1991,
-        1992
+        1993
       ],
       [
         "Orlando Magic",
@@ -1814,26 +1279,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Chicago Bulls",
         1993,
-        1994
-      ],
-      [
-        "Chicago Bulls",
-        1995,
-        1996
-      ],
-      [
-        "Chicago Bulls",
-        1997,
         1998
       ],
       [
         "San Antonio Spurs",
         1998,
-        1999
-      ],
-      [
-        "San Antonio Spurs",
-        2000,
         2001
       ],
       [
@@ -1859,12 +1309,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Detroit Pistons",
         1998,
-        1999
-      ],
-      [
-        "Detroit Pistons",
-        2000,
-        2001
+        2002
       ],
       [
         "Atlanta Hawks",
@@ -1904,7 +1349,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Sacramento Kings",
         2007,
-        2008
+        2009
       ],
       [
         "Boston Celtics",
@@ -1939,12 +1384,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Boston Celtics",
         1997,
-        1998
+        1999
       ],
       [
         "Miami Heat",
         1999,
-        2000
+        2001
       ],
       [
         "Philadelphia 76ers",
@@ -1954,22 +1399,7 @@ const nbaGeneratedRows20260815C = [
       [
         "San Antonio Spurs",
         2001,
-        2002
-      ],
-      [
-        "San Antonio Spurs",
-        2003,
-        2004
-      ],
-      [
-        "San Antonio Spurs",
-        2005,
-        2006
-      ],
-      [
-        "San Antonio Spurs",
-        2007,
-        2008
+        2009
       ]
     ],
     1996,
@@ -1984,45 +1414,25 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Lakers",
         1992,
-        1993
+        1994
       ],
       [
         "New York Knicks",
         1994,
-        1995
-      ],
-      [
-        "Toronto Raptors",
-        1995,
         1996
       ],
       [
         "Toronto Raptors",
-        1997,
-        1998
-      ],
-      [
-        "Toronto Raptors",
-        1999,
+        1995,
         2000
       ],
       [
         "Sacramento Kings",
         2000,
-        2001
-      ],
-      [
-        "Sacramento Kings",
-        2002,
-        2003
-      ],
-      [
-        "Orlando Magic",
-        2004,
         2005
       ],
       [
-        "Sacramento Kings",
+        "Orlando Magic",
         2004,
         2005
       ],
@@ -2059,27 +1469,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Dallas Mavericks",
         2010,
-        2011
+        2012
       ],
       [
         "Indiana Pacers",
         2012,
-        2013
-      ],
-      [
-        "Indiana Pacers",
-        2014,
-        2015
+        2016
       ],
       [
         "Washington Wizards",
         2016,
-        2017
-      ],
-      [
-        "Washington Wizards",
-        2018,
-        2019
+        2020
       ]
     ],
     2007,
@@ -2094,16 +1494,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Utah Jazz",
         2004,
-        2005
+        2006
       ],
       [
         "Toronto Raptors",
         2006,
-        2007
-      ],
-      [
-        "Toronto Raptors",
-        2008,
         2009
       ],
       [
@@ -2114,11 +1509,6 @@ const nbaGeneratedRows20260815C = [
       [
         "New Jersey Nets",
         2009,
-        2010
-      ],
-      [
-        "New Jersey Nets",
-        2011,
         2012
       ],
       [
@@ -2134,12 +1524,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Wizards",
         2014,
-        2015
+        2016
       ],
       [
         "Atlanta Hawks",
         2015,
-        2016
+        2017
       ],
       [
         "Phoenix Suns",
@@ -2169,17 +1559,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         2010,
-        2011
+        2012
       ],
       [
         "Boston Celtics",
         2012,
-        2013
+        2014
       ],
       [
         "Memphis Grizzlies",
         2013,
-        2014
+        2016
       ],
       [
         "Charlotte Hornets",
@@ -2187,24 +1577,14 @@ const nbaGeneratedRows20260815C = [
         2016
       ],
       [
-        "Memphis Grizzlies",
-        2015,
-        2016
-      ],
-      [
         "New York Knicks",
         2016,
-        2017
+        2019
       ],
       [
         "Dallas Mavericks",
         2018,
-        2019
-      ],
-      [
-        "New York Knicks",
-        2018,
-        2019
+        2020
       ]
     ],
     2008,
@@ -2219,21 +1599,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Golden State Warriors",
         1980,
-        1981
-      ],
-      [
-        "Golden State Warriors",
-        1982,
-        1983
+        1984
       ],
       [
         "Golden State Warriors",
         1985,
-        1986
-      ],
-      [
-        "Golden State Warriors",
-        1987,
         1988
       ],
       [
@@ -2244,7 +1614,7 @@ const nbaGeneratedRows20260815C = [
       [
         "New Jersey Nets",
         1988,
-        1989
+        1990
       ],
       [
         "Denver Nuggets",
@@ -2269,42 +1639,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Atlanta Hawks",
         1984,
-        1985
-      ],
-      [
-        "Atlanta Hawks",
-        1986,
-        1987
-      ],
-      [
-        "Atlanta Hawks",
-        1988,
-        1989
+        1990
       ],
       [
         "Sacramento Kings",
         1989,
-        1990
+        1991
       ],
       [
         "San Antonio Spurs",
         1991,
-        1992
-      ],
-      [
-        "San Antonio Spurs",
-        1993,
         1994
       ],
       [
         "Utah Jazz",
         1994,
-        1995
-      ],
-      [
-        "Utah Jazz",
-        1996,
-        1997
+        1998
       ],
       [
         "Houston Rockets",
@@ -2329,45 +1679,20 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Bullets",
         1983,
-        1984
-      ],
-      [
-        "Washington Bullets",
-        1985,
-        1986
-      ],
-      [
-        "Washington Bullets",
-        1987,
-        1988
-      ],
-      [
-        "Washington Bullets",
-        1989,
         1990
       ],
       [
         "Utah Jazz",
         1990,
-        1991
-      ],
-      [
-        "Utah Jazz",
-        1992,
-        1993
+        1994
       ],
       [
         "Philadelphia 76ers",
         1993,
-        1994
-      ],
-      [
-        "Miami Heat",
-        1995,
         1996
       ],
       [
-        "Philadelphia 76ers",
+        "Miami Heat",
         1995,
         1996
       ]
@@ -2384,32 +1709,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         1998,
-        1999
-      ],
-      [
-        "Denver Nuggets",
-        2000,
-        2001
+        2002
       ],
       [
         "Dallas Mavericks",
         2001,
-        2002
+        2003
       ],
       [
         "Boston Celtics",
         2003,
-        2004
-      ],
-      [
-        "Boston Celtics",
-        2005,
         2006
       ],
       [
         "Portland Trail Blazers",
         2006,
-        2007
+        2008
       ]
     ],
     1998,
@@ -2424,27 +1739,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         1992,
-        1993
-      ],
-      [
-        "Minnesota Timberwolves",
-        1994,
-        1995
-      ],
-      [
-        "Atlanta Hawks",
-        1995,
         1996
       ],
       [
         "Atlanta Hawks",
-        1997,
+        1995,
         1998
       ],
       [
         "Detroit Pistons",
         1998,
-        1999
+        2000
       ],
       [
         "Dallas Mavericks",
@@ -2454,12 +1759,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Wizards",
         2000,
-        2001
-      ],
-      [
-        "Washington Wizards",
-        2002,
-        2003
+        2004
       ],
       [
         "Miami Heat",
@@ -2479,17 +1779,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Bullets",
         1993,
-        1994
-      ],
-      [
-        "Washington Bullets",
-        1995,
-        1996
+        1997
       ],
       [
         "Washington Wizards",
         1997,
-        1998
+        1999
       ],
       [
         "Boston Celtics",
@@ -2499,7 +1794,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         2000,
-        2001
+        2002
       ],
       [
         "Utah Jazz",
@@ -2509,11 +1804,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Golden State Warriors",
         2003,
-        2004
-      ],
-      [
-        "Golden State Warriors",
-        2005,
         2006
       ]
     ],
@@ -2529,26 +1819,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Charlotte Hornets",
         2004,
-        2005
-      ],
-      [
-        "Charlotte Hornets",
-        2006,
-        2007
-      ],
-      [
-        "Charlotte Hornets",
-        2008,
         2009
       ],
       [
         "New Orleans Hornets",
         2009,
-        2010
-      ],
-      [
-        "New Orleans Hornets",
-        2011,
         2012
       ],
       [
@@ -2574,22 +1849,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Chicago Bulls",
         2009,
-        2010
-      ],
-      [
-        "Chicago Bulls",
-        2011,
-        2012
-      ],
-      [
-        "Chicago Bulls",
-        2013,
-        2014
-      ],
-      [
-        "Chicago Bulls",
-        2015,
-        2016
+        2017
       ],
       [
         "Oklahoma City Thunder",
@@ -2599,7 +1859,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         2017,
-        2018
+        2019
       ],
       [
         "New York Knicks",
@@ -2624,27 +1884,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Portland Trail Blazers",
         2010,
-        2011
-      ],
-      [
-        "Portland Trail Blazers",
-        2012,
-        2013
-      ],
-      [
-        "Portland Trail Blazers",
-        2014,
         2015
       ],
       [
         "Dallas Mavericks",
         2015,
-        2016
-      ],
-      [
-        "Dallas Mavericks",
-        2017,
-        2018
+        2019
       ],
       [
         "Indiana Pacers",
@@ -2674,7 +1919,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Portland Trail Blazers",
         1986,
-        1987
+        1993
       ],
       [
         "San Antonio Spurs",
@@ -2682,24 +1927,9 @@ const nbaGeneratedRows20260815C = [
         1987
       ],
       [
-        "Portland Trail Blazers",
-        1988,
-        1989
-      ],
-      [
-        "Portland Trail Blazers",
-        1990,
-        1991
-      ],
-      [
-        "Portland Trail Blazers",
-        1992,
-        1993
-      ],
-      [
         "Washington Bullets",
         1993,
-        1994
+        1995
       ],
       [
         "Milwaukee Bucks",
@@ -2724,41 +1954,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Golden State Warriors",
         1985,
-        1986
-      ],
-      [
-        "Golden State Warriors",
-        1987,
-        1988
-      ],
-      [
-        "Golden State Warriors",
-        1989,
-        1990
-      ],
-      [
-        "Golden State Warriors",
-        1991,
-        1992
-      ],
-      [
-        "Golden State Warriors",
-        1993,
-        1994
-      ],
-      [
-        "Golden State Warriors",
-        1995,
-        1996
+        1997
       ],
       [
         "Indiana Pacers",
         1997,
-        1998
-      ],
-      [
-        "Indiana Pacers",
-        1999,
         2000
       ],
       [
@@ -2779,27 +1979,12 @@ const nbaGeneratedRows20260815C = [
       [
         "New York Knicks",
         1985,
-        1986
-      ],
-      [
-        "New York Knicks",
-        1987,
-        1988
-      ],
-      [
-        "New York Knicks",
-        1989,
-        1990
-      ],
-      [
-        "New York Knicks",
-        1991,
         1992
       ],
       [
         "Cleveland Cavaliers",
         1992,
-        1993
+        1994
       ],
       [
         "Vancouver Grizzlies",
@@ -2809,11 +1994,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         1996,
-        1997
-      ],
-      [
-        "Orlando Magic",
-        1998,
         1999
       ]
     ],
@@ -2829,32 +2009,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         1992,
-        1993
-      ],
-      [
-        "Miami Heat",
-        1994,
         1995
       ],
       [
         "Charlotte Hornets",
         1995,
-        1996
-      ],
-      [
-        "Charlotte Hornets",
-        1997,
         1998
       ],
       [
         "Philadelphia 76ers",
         1998,
-        1999
-      ],
-      [
-        "Philadelphia 76ers",
-        2000,
-        2001
+        2002
       ]
     ],
     1992,
@@ -2869,22 +2034,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         1993,
-        1994
+        1995
       ],
       [
         "Los Angeles Clippers",
         1995,
-        1996
-      ],
-      [
-        "Los Angeles Clippers",
-        1997,
-        1998
+        1999
       ],
       [
         "Phoenix Suns",
         1999,
-        2000
+        2002
       ],
       [
         "Boston Celtics",
@@ -2892,14 +2052,9 @@ const nbaGeneratedRows20260815C = [
         2002
       ],
       [
-        "Phoenix Suns",
-        2001,
-        2002
-      ],
-      [
         "New Jersey Nets",
         2002,
-        2003
+        2004
       ],
       [
         "New Orleans Hornets",
@@ -2924,11 +2079,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         1992,
-        1993
-      ],
-      [
-        "Milwaukee Bucks",
-        1994,
         1995
       ],
       [
@@ -2949,17 +2099,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Sacramento Kings",
         1998,
-        1999
-      ],
-      [
-        "Sacramento Kings",
-        2000,
         2001
       ],
       [
         "Detroit Pistons",
         2001,
-        2002
+        2003
       ],
       [
         "Denver Nuggets",
@@ -2974,7 +2119,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         2004,
-        2005
+        2006
       ]
     ],
     1992,
@@ -2999,11 +2144,6 @@ const nbaGeneratedRows20260815C = [
       [
         "New Orleans Hornets",
         2010,
-        2011
-      ],
-      [
-        "New Orleans Hornets",
-        2012,
         2013
       ],
       [
@@ -3024,7 +2164,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Wizards",
         2016,
-        2017
+        2019
       ],
       [
         "Milwaukee Bucks",
@@ -3033,11 +2173,6 @@ const nbaGeneratedRows20260815C = [
       ],
       [
         "New Orleans Pelicans",
-        2018,
-        2019
-      ],
-      [
-        "Washington Wizards",
         2018,
         2019
       ]
@@ -3054,27 +2189,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Utah Jazz",
         2001,
-        2002
-      ],
-      [
-        "Utah Jazz",
-        2003,
-        2004
-      ],
-      [
-        "Utah Jazz",
-        2005,
-        2006
-      ],
-      [
-        "Utah Jazz",
-        2007,
-        2008
-      ],
-      [
-        "Utah Jazz",
-        2009,
-        2010
+        2011
       ],
       [
         "Minnesota Timberwolves",
@@ -3084,7 +2199,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Brooklyn Nets",
         2013,
-        2014
+        2015
       ]
     ],
     2001,
@@ -3099,26 +2214,11 @@ const nbaGeneratedRows20260815C = [
       [
         "San Antonio Spurs",
         2008,
-        2009
-      ],
-      [
-        "San Antonio Spurs",
-        2010,
         2011
       ],
       [
         "Indiana Pacers",
         2011,
-        2012
-      ],
-      [
-        "Indiana Pacers",
-        2013,
-        2014
-      ],
-      [
-        "Indiana Pacers",
-        2015,
         2016
       ],
       [
@@ -3129,7 +2229,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Cleveland Cavaliers",
         2017,
-        2018
+        2019
       ],
       [
         "Sacramento Kings",
@@ -3139,7 +2239,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         2018,
-        2019
+        2020
       ]
     ],
     2008,
@@ -3154,31 +2254,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         1983,
-        1984
-      ],
-      [
-        "Milwaukee Bucks",
-        1985,
-        1986
-      ],
-      [
-        "Milwaukee Bucks",
-        1987,
-        1988
-      ],
-      [
-        "Milwaukee Bucks",
-        1989,
         1990
       ],
       [
         "Minnesota Timberwolves",
         1989,
-        1990
-      ],
-      [
-        "Minnesota Timberwolves",
-        1991,
         1992
       ],
       [
@@ -3204,36 +2284,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Boston Celtics",
         1980,
-        1981
-      ],
-      [
-        "Boston Celtics",
-        1982,
-        1983
-      ],
-      [
-        "Boston Celtics",
-        1984,
-        1985
-      ],
-      [
-        "Boston Celtics",
-        1986,
-        1987
-      ],
-      [
-        "Boston Celtics",
-        1988,
-        1989
-      ],
-      [
-        "Boston Celtics",
-        1990,
-        1991
-      ],
-      [
-        "Boston Celtics",
-        1992,
         1993
       ]
     ],
@@ -3249,31 +2299,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Indiana Pacers",
         1984,
-        1985
-      ],
-      [
-        "Indiana Pacers",
-        1986,
-        1987
-      ],
-      [
-        "Indiana Pacers",
-        1988,
-        1989
-      ],
-      [
-        "Indiana Pacers",
-        1990,
-        1991
-      ],
-      [
-        "Indiana Pacers",
-        1992,
-        1993
-      ],
-      [
-        "Indiana Pacers",
-        1994,
         1995
       ],
       [
@@ -3294,32 +2319,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Sacramento Kings",
         1990,
-        1991
-      ],
-      [
-        "Sacramento Kings",
-        1992,
-        1993
-      ],
-      [
-        "Sacramento Kings",
-        1994,
-        1995
-      ],
-      [
-        "Sacramento Kings",
-        1996,
         1997
       ],
       [
         "Miami Heat",
         1997,
-        1998
-      ],
-      [
-        "Miami Heat",
-        1999,
-        2000
+        2001
       ]
     ],
     1990,
@@ -3334,12 +2339,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         1999,
-        2000
-      ],
-      [
-        "Denver Nuggets",
-        2001,
-        2002
+        2003
       ],
       [
         "Houston Rockets",
@@ -3349,12 +2349,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Memphis Grizzlies",
         2003,
-        2004
+        2005
       ],
       [
         "Miami Heat",
         2005,
-        2006
+        2007
       ],
       [
         "Boston Celtics",
@@ -3364,7 +2364,7 @@ const nbaGeneratedRows20260815C = [
       [
         "New Orleans Hornets",
         2008,
-        2009
+        2010
       ],
       [
         "Indiana Pacers",
@@ -3384,11 +2384,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Dallas Mavericks",
         1993,
-        1994
-      ],
-      [
-        "Dallas Mavericks",
-        1995,
         1996
       ],
       [
@@ -3399,21 +2394,6 @@ const nbaGeneratedRows20260815C = [
       [
         "New Jersey Nets",
         1997,
-        1998
-      ],
-      [
-        "New Jersey Nets",
-        1999,
-        2000
-      ],
-      [
-        "New Jersey Nets",
-        2001,
-        2002
-      ],
-      [
-        "New Jersey Nets",
-        2003,
         2004
       ],
       [
@@ -3434,21 +2414,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Washington Wizards",
         2001,
-        2002
-      ],
-      [
-        "Washington Wizards",
-        2003,
-        2004
+        2005
       ],
       [
         "Los Angeles Lakers",
         2005,
-        2006
-      ],
-      [
-        "Los Angeles Lakers",
-        2007,
         2008
       ],
       [
@@ -3459,7 +2429,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Detroit Pistons",
         2008,
-        2009
+        2010
       ],
       [
         "Charlotte Hornets",
@@ -3489,32 +2459,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Toronto Raptors",
         2004,
-        2005
+        2006
       ],
       [
         "San Antonio Spurs",
         2006,
-        2007
-      ],
-      [
-        "San Antonio Spurs",
-        2008,
-        2009
-      ],
-      [
-        "San Antonio Spurs",
-        2010,
-        2011
-      ],
-      [
-        "San Antonio Spurs",
-        2012,
-        2013
-      ],
-      [
-        "San Antonio Spurs",
-        2014,
-        2015
+        2016
       ]
     ],
     2004,
@@ -3529,12 +2479,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         2000,
-        2001
-      ],
-      [
-        "Los Angeles Clippers",
-        2002,
-        2003
+        2004
       ],
       [
         "Phoenix Suns",
@@ -3544,12 +2489,7 @@ const nbaGeneratedRows20260815C = [
       [
         "New York Knicks",
         2005,
-        2006
-      ],
-      [
-        "New York Knicks",
-        2007,
-        2008
+        2009
       ],
       [
         "Miami Heat",
@@ -3559,7 +2499,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         2010,
-        2011
+        2012
       ],
       [
         "New York Knicks",
@@ -3579,22 +2519,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Boston Celtics",
         1983,
-        1984
-      ],
-      [
-        "Boston Celtics",
-        1985,
-        1986
-      ],
-      [
-        "Boston Celtics",
-        1987,
         1988
       ],
       [
         "Los Angeles Clippers",
         1987,
-        1988
+        1989
       ],
       [
         "Charlotte Hornets",
@@ -3609,12 +2539,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         1990,
-        1991
-      ],
-      [
-        "Orlando Magic",
-        1992,
-        1993
+        1994
       ],
       [
         "Indiana Pacers",
@@ -3639,27 +2564,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Indiana Pacers",
         1986,
-        1987
-      ],
-      [
-        "Indiana Pacers",
-        1988,
-        1989
-      ],
-      [
-        "Indiana Pacers",
-        1990,
-        1991
+        1992
       ],
       [
         "Minnesota Timberwolves",
         1992,
-        1993
+        1994
       ],
       [
         "San Antonio Spurs",
         1994,
-        1995
+        1996
       ],
       [
         "San Antonio Spurs",
@@ -3689,41 +2604,16 @@ const nbaGeneratedRows20260815C = [
       [
         "New Jersey Nets",
         1989,
-        1990
-      ],
-      [
-        "New Jersey Nets",
-        1991,
         1992
       ],
       [
         "Atlanta Hawks",
         1992,
-        1993
-      ],
-      [
-        "Atlanta Hawks",
-        1994,
-        1995
-      ],
-      [
-        "Atlanta Hawks",
-        1996,
-        1997
-      ],
-      [
-        "Atlanta Hawks",
-        1998,
         1999
       ],
       [
         "Golden State Warriors",
         1999,
-        2000
-      ],
-      [
-        "Golden State Warriors",
-        2001,
         2002
       ]
     ],
@@ -3739,27 +2629,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Portland Trail Blazers",
         1997,
-        1998
+        1999
       ],
       [
         "Houston Rockets",
         1999,
-        2000
-      ],
-      [
-        "Houston Rockets",
-        2001,
-        2002
-      ],
-      [
-        "Houston Rockets",
-        2003,
         2004
       ],
       [
         "Orlando Magic",
         2004,
-        2005
+        2006
       ],
       [
         "Detroit Pistons",
@@ -3784,42 +2664,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Chicago Bulls",
         1993,
-        1994
-      ],
-      [
-        "Chicago Bulls",
-        1995,
-        1996
-      ],
-      [
-        "Chicago Bulls",
-        1997,
-        1998
-      ],
-      [
-        "Chicago Bulls",
-        1999,
         2000
       ],
       [
         "Philadelphia 76ers",
         1999,
-        2000
+        2001
       ],
       [
         "Atlanta Hawks",
         2000,
-        2001
+        2002
       ],
       [
         "Milwaukee Bucks",
         2002,
-        2003
-      ],
-      [
-        "Milwaukee Bucks",
-        2004,
-        2005
+        2006
       ]
     ],
     1993,
@@ -3834,42 +2694,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Portland Trail Blazers",
         1994,
-        1995
+        1997
       ],
       [
         "Detroit Pistons",
         1996,
-        1997
-      ],
-      [
-        "Portland Trail Blazers",
-        1996,
-        1997
-      ],
-      [
-        "Philadelphia 76ers",
-        1997,
         1998
       ],
       [
         "Philadelphia 76ers",
-        1999,
-        2000
-      ],
-      [
-        "Philadelphia 76ers",
-        2001,
-        2002
-      ],
-      [
-        "Philadelphia 76ers",
-        2003,
-        2004
+        1997,
+        2005
       ],
       [
         "Los Angeles Lakers",
         2005,
-        2006
+        2007
       ]
     ],
     1994,
@@ -3884,12 +2724,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Boston Celtics",
         2000,
-        2001
-      ],
-      [
-        "Boston Celtics",
-        2002,
-        2003
+        2006
       ],
       [
         "Denver Nuggets",
@@ -3897,19 +2732,14 @@ const nbaGeneratedRows20260815C = [
         2003
       ],
       [
-        "Boston Celtics",
-        2004,
-        2005
-      ],
-      [
         "Minnesota Timberwolves",
         2005,
-        2006
+        2007
       ],
       [
         "Miami Heat",
         2007,
-        2008
+        2009
       ]
     ],
     2000,
@@ -3929,22 +2759,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         2002,
-        2003
+        2004
       ],
       [
         "Cleveland Cavaliers",
         2004,
-        2005
-      ],
-      [
-        "Cleveland Cavaliers",
-        2006,
-        2007
+        2008
       ],
       [
         "Chicago Bulls",
         2007,
-        2008
+        2009
       ],
       [
         "Sacramento Kings",
@@ -3969,21 +2794,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         2010,
-        2011
-      ],
-      [
-        "Milwaukee Bucks",
-        2012,
         2013
       ],
       [
         "Washington Wizards",
         2013,
-        2014
-      ],
-      [
-        "Washington Wizards",
-        2015,
         2016
       ]
     ],
@@ -3999,21 +2814,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Atlanta Hawks",
         2009,
-        2010
-      ],
-      [
-        "Atlanta Hawks",
-        2011,
-        2012
-      ],
-      [
-        "Atlanta Hawks",
-        2013,
-        2014
-      ],
-      [
-        "Atlanta Hawks",
-        2015,
         2016
       ],
       [
@@ -4024,15 +2824,10 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         2017,
-        2018
-      ],
-      [
-        "Atlanta Hawks",
-        2019,
         2020
       ],
       [
-        "Minnesota Timberwolves",
+        "Atlanta Hawks",
         2019,
         2020
       ]
@@ -4049,32 +2844,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Miami Heat",
         1988,
-        1989
-      ],
-      [
-        "Miami Heat",
-        1990,
-        1991
-      ],
-      [
-        "Miami Heat",
-        1992,
-        1993
+        1994
       ],
       [
         "Golden State Warriors",
         1994,
-        1995
+        1996
       ],
       [
         "Orlando Magic",
         1996,
-        1997
+        1998
       ],
       [
         "New Jersey Nets",
         1997,
-        1998
+        1999
       ]
     ],
     1988,
@@ -4089,37 +2874,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Seattle SuperSonics",
         1987,
-        1988
-      ],
-      [
-        "Seattle SuperSonics",
-        1989,
-        1990
-      ],
-      [
-        "Seattle SuperSonics",
-        1991,
-        1992
+        1993
       ],
       [
         "Indiana Pacers",
         1993,
-        1994
-      ],
-      [
-        "Indiana Pacers",
-        1995,
-        1996
-      ],
-      [
-        "Indiana Pacers",
-        1997,
-        1998
-      ],
-      [
-        "Indiana Pacers",
-        1999,
-        2000
+        2001
       ],
       [
         "Philadelphia 76ers",
@@ -4144,37 +2904,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Charlotte Hornets",
         1988,
-        1989
-      ],
-      [
-        "Charlotte Hornets",
-        1990,
-        1991
-      ],
-      [
-        "Charlotte Hornets",
-        1992,
-        1993
-      ],
-      [
-        "Charlotte Hornets",
-        1994,
-        1995
-      ],
-      [
-        "Charlotte Hornets",
-        1996,
-        1997
+        1998
       ],
       [
         "Golden State Warriors",
         1997,
-        1998
+        1999
       ],
       [
         "Toronto Raptors",
         1999,
-        2000
+        2001
       ]
     ],
     1987,
@@ -4194,26 +2934,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Sacramento Kings",
         1998,
-        1999
-      ],
-      [
-        "Sacramento Kings",
-        2000,
-        2001
-      ],
-      [
-        "Sacramento Kings",
-        2002,
         2003
       ],
       [
         "Indiana Pacers",
         2003,
-        2004
-      ],
-      [
-        "Indiana Pacers",
-        2005,
         2006
       ],
       [
@@ -4239,26 +2964,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Utah Jazz",
         1993,
-        1994
-      ],
-      [
-        "Utah Jazz",
-        1995,
-        1996
-      ],
-      [
-        "Utah Jazz",
-        1997,
-        1998
-      ],
-      [
-        "Utah Jazz",
-        1999,
-        2000
-      ],
-      [
-        "Utah Jazz",
-        2001,
         2002
       ],
       [
@@ -4274,7 +2979,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         2004,
-        2005
+        2006
       ]
     ],
     1993,
@@ -4294,17 +2999,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Atlanta Hawks",
         1998,
-        1999
+        2001
       ],
       [
         "Orlando Magic",
         1999,
         2000
-      ],
-      [
-        "Atlanta Hawks",
-        2000,
-        2001
       ],
       [
         "Cleveland Cavaliers",
@@ -4314,22 +3014,17 @@ const nbaGeneratedRows20260815C = [
       [
         "New Jersey Nets",
         2001,
-        2002
+        2003
       ],
       [
         "Indiana Pacers",
         2003,
-        2004
-      ],
-      [
-        "Indiana Pacers",
-        2005,
         2006
       ],
       [
         "Atlanta Hawks",
         2006,
-        2007
+        2008
       ],
       [
         "Dallas Mavericks",
@@ -4344,7 +3039,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Orlando Magic",
         2008,
-        2009
+        2010
       ]
     ],
     1997,
@@ -4359,22 +3054,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Cleveland Cavaliers",
         2001,
-        2002
-      ],
-      [
-        "Cleveland Cavaliers",
-        2003,
-        2004
+        2005
       ],
       [
         "Dallas Mavericks",
         2005,
-        2006
-      ],
-      [
-        "Dallas Mavericks",
-        2007,
-        2008
+        2009
       ],
       [
         "New Jersey Nets",
@@ -4384,16 +3069,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Charlotte Hornets",
         2008,
-        2009
-      ],
-      [
-        "Charlotte Hornets",
-        2010,
-        2011
-      ],
-      [
-        "Charlotte Hornets",
-        2012,
         2013
       ]
     ],
@@ -4409,36 +3084,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Portland Trail Blazers",
         2008,
-        2009
-      ],
-      [
-        "Portland Trail Blazers",
-        2010,
-        2011
-      ],
-      [
-        "Portland Trail Blazers",
-        2012,
-        2013
-      ],
-      [
-        "Portland Trail Blazers",
-        2014,
         2015
       ],
       [
         "Charlotte Hornets",
         2015,
-        2016
-      ],
-      [
-        "Charlotte Hornets",
-        2017,
-        2018
-      ],
-      [
-        "Charlotte Hornets",
-        2019,
         2020
       ]
     ],
@@ -4454,22 +3104,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Detroit Pistons",
         2007,
-        2008
+        2009
       ],
       [
         "Denver Nuggets",
         2009,
-        2010
-      ],
-      [
-        "Denver Nuggets",
-        2011,
         2012
       ],
       [
         "Orlando Magic",
         2012,
-        2013
+        2014
       ],
       [
         "Denver Nuggets",
@@ -4509,21 +3154,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Philadelphia 76ers",
         1980,
-        1981
-      ],
-      [
-        "Philadelphia 76ers",
-        1982,
         1983
       ],
       [
         "Detroit Pistons",
         1983,
-        1984
-      ],
-      [
-        "Detroit Pistons",
-        1985,
         1986
       ],
       [
@@ -4534,7 +3169,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         1986,
-        1987
+        1988
       ],
       [
         "Charlotte Hornets",
@@ -4569,46 +3204,26 @@ const nbaGeneratedRows20260815C = [
       [
         "Phoenix Suns",
         1987,
-        1988
+        1990
       ],
       [
         "Charlotte Hornets",
         1989,
-        1990
-      ],
-      [
-        "Phoenix Suns",
-        1989,
-        1990
-      ],
-      [
-        "Philadelphia 76ers",
-        1990,
         1991
       ],
       [
         "Philadelphia 76ers",
-        1992,
+        1990,
         1993
       ],
       [
         "New Jersey Nets",
         1993,
-        1994
-      ],
-      [
-        "New Jersey Nets",
-        1995,
         1996
       ],
       [
         "Milwaukee Bucks",
         1996,
-        1997
-      ],
-      [
-        "Milwaukee Bucks",
-        1998,
         1999
       ],
       [
@@ -4629,41 +3244,16 @@ const nbaGeneratedRows20260815C = [
       [
         "Houston Rockets",
         1983,
-        1984
-      ],
-      [
-        "Houston Rockets",
-        1985,
         1986
       ],
       [
         "Cleveland Cavaliers",
         1986,
-        1987
-      ],
-      [
-        "Cleveland Cavaliers",
-        1988,
-        1989
-      ],
-      [
-        "Cleveland Cavaliers",
-        1990,
-        1991
-      ],
-      [
-        "Cleveland Cavaliers",
-        1992,
         1993
       ],
       [
         "Atlanta Hawks",
         1993,
-        1994
-      ],
-      [
-        "Atlanta Hawks",
-        1995,
         1996
       ],
       [
@@ -4684,32 +3274,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         1998,
-        1999
-      ],
-      [
-        "Los Angeles Clippers",
-        2000,
-        2001
-      ],
-      [
-        "Los Angeles Clippers",
-        2002,
         2003
       ],
       [
         "Minnesota Timberwolves",
         2003,
-        2004
+        2006
       ],
       [
         "Boston Celtics",
         2005,
-        2006
-      ],
-      [
-        "Minnesota Timberwolves",
-        2005,
-        2006
+        2007
       ]
     ],
     1998,
@@ -4729,27 +3304,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         2000,
-        2001
-      ],
-      [
-        "Los Angeles Clippers",
-        2002,
-        2003
-      ],
-      [
-        "Los Angeles Clippers",
-        2004,
-        2005
-      ],
-      [
-        "Los Angeles Clippers",
-        2006,
-        2007
+        2008
       ],
       [
         "Golden State Warriors",
         2008,
-        2009
+        2010
       ],
       [
         "Milwaukee Bucks",
@@ -4779,26 +3339,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         1994,
-        1995
-      ],
-      [
-        "Los Angeles Clippers",
-        1996,
-        1997
-      ],
-      [
-        "Los Angeles Clippers",
-        1998,
-        1999
-      ],
-      [
-        "Los Angeles Clippers",
-        2000,
-        2001
-      ],
-      [
-        "Los Angeles Clippers",
-        2002,
         2003
       ],
       [
@@ -4809,12 +3349,12 @@ const nbaGeneratedRows20260815C = [
       [
         "Chicago Bulls",
         2004,
-        2005
+        2006
       ],
       [
         "Phoenix Suns",
         2006,
-        2007
+        2008
       ]
     ],
     1994,
@@ -4829,12 +3369,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Milwaukee Bucks",
         2000,
-        2001
-      ],
-      [
-        "Milwaukee Bucks",
-        2002,
-        2003
+        2004
       ],
       [
         "Atlanta Hawks",
@@ -4844,25 +3379,10 @@ const nbaGeneratedRows20260815C = [
       [
         "Portland Trail Blazers",
         2004,
-        2005
-      ],
-      [
-        "Portland Trail Blazers",
-        2006,
-        2007
-      ],
-      [
-        "Portland Trail Blazers",
-        2008,
-        2009
+        2012
       ],
       [
         "Charlotte Hornets",
-        2010,
-        2011
-      ],
-      [
-        "Portland Trail Blazers",
         2010,
         2011
       ],
@@ -4884,27 +3404,22 @@ const nbaGeneratedRows20260815C = [
       [
         "New Orleans Hornets",
         2005,
-        2006
+        2007
       ],
       [
         "Dallas Mavericks",
         2007,
-        2008
+        2009
       ],
       [
         "Orlando Magic",
         2009,
-        2010
+        2011
       ],
       [
         "Boston Celtics",
         2011,
-        2012
-      ],
-      [
-        "Boston Celtics",
-        2013,
-        2014
+        2015
       ],
       [
         "Los Angeles Lakers",
@@ -4929,11 +3444,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Minnesota Timberwolves",
         2006,
-        2007
-      ],
-      [
-        "Minnesota Timberwolves",
-        2008,
         2009
       ],
       [
@@ -4944,7 +3454,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         2010,
-        2011
+        2012
       ],
       [
         "Utah Jazz",
@@ -4954,11 +3464,6 @@ const nbaGeneratedRows20260815C = [
       [
         "Denver Nuggets",
         2013,
-        2014
-      ],
-      [
-        "Denver Nuggets",
-        2015,
         2016
       ],
       [
@@ -4984,27 +3489,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Chicago Bulls",
         1986,
-        1987
+        1988
       ],
       [
         "Utah Jazz",
         1988,
-        1989
-      ],
-      [
-        "Utah Jazz",
-        1990,
-        1991
-      ],
-      [
-        "Utah Jazz",
-        1992,
         1993
       ],
       [
         "Minnesota Timberwolves",
         1993,
-        1994
+        1995
       ],
       [
         "Philadelphia 76ers",
@@ -5029,36 +3524,11 @@ const nbaGeneratedRows20260815C = [
       [
         "Utah Jazz",
         1983,
-        1984
-      ],
-      [
-        "Utah Jazz",
-        1985,
-        1986
-      ],
-      [
-        "Utah Jazz",
-        1987,
-        1988
-      ],
-      [
-        "Utah Jazz",
-        1989,
-        1990
-      ],
-      [
-        "Minnesota Timberwolves",
-        1991,
-        1992
-      ],
-      [
-        "Utah Jazz",
-        1991,
         1992
       ],
       [
         "Minnesota Timberwolves",
-        1993,
+        1991,
         1994
       ],
       [
@@ -5079,32 +3549,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Golden State Warriors",
         1989,
-        1990
-      ],
-      [
-        "Golden State Warriors",
-        1991,
-        1992
+        1993
       ],
       [
         "Golden State Warriors",
         1994,
-        1995
-      ],
-      [
-        "Miami Heat",
-        1995,
         1996
       ],
       [
         "Miami Heat",
-        1997,
-        1998
-      ],
-      [
-        "Miami Heat",
-        1999,
-        2000
+        1995,
+        2001
       ],
       [
         "Dallas Mavericks",
@@ -5134,27 +3589,17 @@ const nbaGeneratedRows20260815C = [
       [
         "Philadelphia 76ers",
         1997,
-        1998
-      ],
-      [
-        "Milwaukee Bucks",
-        1998,
         1999
       ],
       [
         "Milwaukee Bucks",
-        2000,
-        2001
-      ],
-      [
-        "Milwaukee Bucks",
-        2002,
-        2003
+        1998,
+        2004
       ],
       [
         "New York Knicks",
         2003,
-        2004
+        2005
       ],
       [
         "Chicago Bulls",
@@ -5169,15 +3614,10 @@ const nbaGeneratedRows20260815C = [
       [
         "Los Angeles Clippers",
         2006,
-        2007
-      ],
-      [
-        "Chicago Bulls",
-        2008,
         2009
       ],
       [
-        "Los Angeles Clippers",
+        "Chicago Bulls",
         2008,
         2009
       ],
@@ -5204,37 +3644,22 @@ const nbaGeneratedRows20260815C = [
       [
         "Sacramento Kings",
         1998,
-        1999
-      ],
-      [
-        "Sacramento Kings",
-        2000,
         2001
       ],
       [
         "Memphis Grizzlies",
         2001,
-        2002
-      ],
-      [
-        "Memphis Grizzlies",
-        2003,
-        2004
+        2005
       ],
       [
         "Miami Heat",
         2005,
-        2006
-      ],
-      [
-        "Miami Heat",
-        2007,
         2008
       ],
       [
         "Orlando Magic",
         2009,
-        2010
+        2011
       ],
       [
         "Memphis Grizzlies",
@@ -5254,22 +3679,7 @@ const nbaGeneratedRows20260815C = [
       [
         "Utah Jazz",
         2001,
-        2002
-      ],
-      [
-        "Utah Jazz",
-        2003,
-        2004
-      ],
-      [
-        "Utah Jazz",
-        2005,
-        2006
-      ],
-      [
-        "Utah Jazz",
-        2007,
-        2008
+        2009
       ],
       [
         "Phoenix Suns",
