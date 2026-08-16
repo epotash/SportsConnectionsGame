@@ -29,6 +29,6 @@ window.lineageSportManifest = {
   nfl: {
     id: "nfl",
     label: "NFL",
-    scripts: ["data/nfl/starter-pack.js", "data/nfl/expansion-20260816.js"],
+    scripts: ["data/nfl/starter-pack.js", "data/nfl/expansion-20260816.js", "data/nfl/expansion-20260816-b.js"],
   },
 };
