@@ -41,6 +41,19 @@ const sportSettings = {
     recentPoolCopy:
       "Start and target players debuted in 2010 or later and still meet the NFL endpoint minimum. Any NFL player can be a connector.",
   },
+  mlb: {
+    label: "MLB",
+    leagueName: "MLB",
+    theme: "baseball",
+    eyebrow: "Random baseball challenge",
+    heroCopy: "Build a chain between two established MLB players. Every link must be a real teammate.",
+    footer: "LINEAGE / BASEBALL",
+    fullPoolTitle: "Established MLB careers",
+    fullPoolCopy: "Endpoint minimum: 500+ MLB games. Any MLB player in the pack can be used as a connector.",
+    recentPoolTitle: "2010-present MLB careers",
+    recentPoolCopy:
+      "Start and target players debuted in 2010 or later and still meet the MLB endpoint minimum. Any MLB player can be a connector.",
+  },
 };
 const puzzle = { start: null, target: null, par: null };
 const state = {
@@ -110,6 +123,7 @@ function isEndpointEligible(player) {
   const [debut, gamesPlayed] = careerStats[player.id] || [];
   if (currentSport === "nba") return gamesPlayed >= 500;
   if (currentSport === "nfl") return gamesPlayed >= 100;
+  if (currentSport === "mlb") return gamesPlayed >= 500;
 
   const debutedBefore1980 = debut < 1980;
   const minimumGames = player.position === "G"
@@ -175,11 +189,13 @@ function eligibilityLabel(player) {
   const [debut] = careerStats[player.id];
   if (currentSport === "nba") return "500+ NBA games";
   if (currentSport === "nfl") return "100+ NFL games";
+  if (currentSport === "mlb") return "500+ MLB games";
   if (player.position === "G") return debut < 1980 ? "400+ NHL games" : "200+ NHL games";
   return debut < 1980 ? "800+ NHL games" : "500+ NHL games";
 }
 
 function formatSeason(year) {
+  if (currentSport === "mlb") return String(year);
   return `${year}–${String(year + 1).slice(-2)}`;
 }
 

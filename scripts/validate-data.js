@@ -178,6 +178,25 @@ for (const [sportId, sport] of Object.entries(sports)) {
         );
       }
     }
+  } else if (sportId === "mlb") {
+    const knownConnections = [
+      ["derek-jeter", "mariano-rivera", "New York Yankees"],
+      ["mookie-betts", "freddie-freeman", "Los Angeles Dodgers"],
+      ["jose-altuve", "justin-verlander", "Houston Astros"],
+      ["chase-utley", "jimmy-rollins", "Philadelphia Phillies"],
+      ["david-ortiz", "dustin-pedroia", "Boston Red Sox"],
+    ];
+
+    for (const [firstId, secondId, team] of knownConnections) {
+      const connection = findConnection(firstId, secondId, playerById);
+      if (!connection) {
+        errors.push(`${sportId}: Expected ${firstId} and ${secondId} to be teammates on ${team}.`);
+      } else if (connection.team !== team) {
+        warnings.push(
+          `${sportId}: Expected ${firstId}/${secondId} on ${team}; first detected overlap is ${connection.team} ${connection.season}.`,
+        );
+      }
+    }
   }
 }
 

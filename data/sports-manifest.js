@@ -40,4 +40,15 @@ window.lineageSportManifest = {
       "data/nfl/expansion-20260816-g.js",
     ],
   },
+  mlb: {
+    id: "mlb",
+    label: "MLB",
+    scripts: [
+      "data/mlb/starter-pack.js",
+      "data/mlb/expansion-20260816-a.js",
+      "data/mlb/expansion-20260816-b.js",
+      "data/mlb/expansion-20260816-c.js",
+      "data/mlb/expansion-20260816-d.js",
+    ],
+  },
 };
