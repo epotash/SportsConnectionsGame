@@ -159,6 +159,25 @@ for (const [sportId, sport] of Object.entries(sports)) {
         );
       }
     }
+  } else if (sportId === "nfl") {
+    const knownConnections = [
+      ["tom-brady", "rob-gronkowski", "New England Patriots"],
+      ["patrick-mahomes", "travis-kelce", "Kansas City Chiefs"],
+      ["peyton-manning", "marvin-harrison", "Indianapolis Colts"],
+      ["jerry-rice", "joe-montana", "San Francisco 49ers"],
+      ["drew-brees", "jimmy-graham", "New Orleans Saints"],
+    ];
+
+    for (const [firstId, secondId, team] of knownConnections) {
+      const connection = findConnection(firstId, secondId, playerById);
+      if (!connection) {
+        errors.push(`${sportId}: Expected ${firstId} and ${secondId} to be teammates on ${team}.`);
+      } else if (connection.team !== team) {
+        warnings.push(
+          `${sportId}: Expected ${firstId}/${secondId} on ${team}; first detected overlap is ${connection.team} ${connection.season}.`,
+        );
+      }
+    }
   }
 }
 

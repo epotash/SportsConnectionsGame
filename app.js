@@ -28,6 +28,19 @@ const sportSettings = {
     recentPoolCopy:
       "Start and target players debuted in 2010 or later and still meet the NBA endpoint minimum. Any NBA player can be a connector.",
   },
+  nfl: {
+    label: "NFL",
+    leagueName: "NFL",
+    theme: "football",
+    eyebrow: "Random football challenge",
+    heroCopy: "Build a chain between two established NFL players. Every link must be a real teammate.",
+    footer: "LINEAGE / FOOTBALL",
+    fullPoolTitle: "Established NFL careers",
+    fullPoolCopy: "Endpoint minimum: 100+ NFL games. Any NFL player in the pack can be used as a connector.",
+    recentPoolTitle: "2010-present NFL careers",
+    recentPoolCopy:
+      "Start and target players debuted in 2010 or later and still meet the NFL endpoint minimum. Any NFL player can be a connector.",
+  },
 };
 const puzzle = { start: null, target: null, par: null };
 const state = {
@@ -95,6 +108,7 @@ function normalizeText(value) {
 function isEndpointEligible(player) {
   const [debut, gamesPlayed] = careerStats[player.id] || [];
   if (currentSport === "nba") return gamesPlayed >= 500;
+  if (currentSport === "nfl") return gamesPlayed >= 100;
 
   const debutedBefore1980 = debut < 1980;
   const minimumGames = player.position === "G"
@@ -159,6 +173,7 @@ function eligibilityLabel(player) {
   if (!isEndpointEligible(player)) return `${activeSettings().leagueName} player`;
   const [debut] = careerStats[player.id];
   if (currentSport === "nba") return "500+ NBA games";
+  if (currentSport === "nfl") return "100+ NFL games";
   if (player.position === "G") return debut < 1980 ? "400+ NHL games" : "200+ NHL games";
   return debut < 1980 ? "800+ NHL games" : "500+ NHL games";
 }
@@ -681,7 +696,7 @@ function shareResult() {
     `${activeSettings().footer}\n${lastName(playerById[puzzle.start])} → ${lastName(playerById[puzzle.target])}\n` +
     `${boxes}\n${state.chain.length - 1} links · ${formatTime(state.seconds)}`;
   if (navigator.share) {
-    navigator.share({ title: "Lineage Hockey", text }).catch(() => {});
+    navigator.share({ title: "Lineage", text }).catch(() => {});
   } else {
     navigator.clipboard.writeText(text).then(() => {
       document.querySelector("#shareButton").textContent = "Copied!";

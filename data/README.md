@@ -8,6 +8,7 @@ Player data is split so the game can keep growing without turning `app.js` into 
 - `nba/starter-pack.js` contains the first NBA sport pack as `window.lineageSports.nba`.
 - `nba/expansion-YYYYMMDD.js` files append NBA batches after the starter pack.
 - `nba/generated-YYYYMMDD-*.js` files are bulk NBA imports generated from historical season data.
+- `nfl/starter-pack.js` contains the first NFL sport pack as `window.lineageSports.nfl`.
 - `data.js` registers the existing NHL data as `window.lineageSports.nhl`.
 - `sports-manifest.js` lists non-default sport scripts that the app lazy-loads when selected.
 - Team ranges are `[from, to)`, where `from` is the season start year.
