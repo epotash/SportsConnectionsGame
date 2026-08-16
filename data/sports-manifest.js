@@ -35,6 +35,8 @@ window.lineageSportManifest = {
       "data/nfl/expansion-20260816-b.js",
       "data/nfl/expansion-20260816-c.js",
       "data/nfl/expansion-20260816-d.js",
+      "data/nfl/expansion-20260816-e.js",
+      "data/nfl/expansion-20260816-f.js",
     ],
   },
 };
