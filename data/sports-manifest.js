@@ -4,6 +4,7 @@ window.lineageSportManifest = {
     label: "NHL",
     scripts: [
       "data/nhl/expansion-20260818-a.js",
+      "data/nhl/expansion-20260818-b.js",
     ],
   },
   nba: {
