@@ -2,7 +2,9 @@ window.lineageSportManifest = {
   nhl: {
     id: "nhl",
     label: "NHL",
-    scripts: [],
+    scripts: [
+      "data/nhl/expansion-20260818-a.js",
+    ],
   },
   nba: {
     id: "nba",
