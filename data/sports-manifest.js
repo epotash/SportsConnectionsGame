@@ -5,6 +5,7 @@ window.lineageSportManifest = {
     scripts: [
       "data/nhl/expansion-20260818-a.js",
       "data/nhl/expansion-20260818-b.js",
+      "data/nhl/patch-20260818-jon-merrill.js",
     ],
   },
   nba: {
