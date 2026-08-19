@@ -153,9 +153,8 @@ function loadScript(src) {
 }
 
 async function ensureSportLoaded(sportId) {
-  if (sports[sportId]) return true;
   const manifest = sportManifest[sportId];
-  if (!manifest) return false;
+  if (!manifest) return Boolean(sports[sportId]);
 
   for (const src of manifest.scripts || []) {
     if (loadedSportScripts.has(src)) continue;
