@@ -58,6 +58,11 @@ window.lineageSportManifest = {
       "data/mlb/expansion-20260816-g.js",
       "data/mlb/expansion-20260816-h.js",
       "data/mlb/expansion-20260816-i.js",
+      "data/mlb/expansion-20260821-a.js",
+      "data/mlb/expansion-20260821-b.js",
+      "data/mlb/expansion-20260821-c.js",
+      "data/mlb/expansion-20260821-d.js",
+      "data/mlb/expansion-20260821-e.js",
     ],
   },
 };
