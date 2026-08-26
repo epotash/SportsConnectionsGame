@@ -446,10 +446,9 @@ function renderSearchResults(query = "") {
     return;
   }
 
-  const matches = players
-    .filter((player) => !state.chain.includes(player.id))
-    .filter((player) => normalizeText(player.name).includes(normalized))
-    .slice(0, 7);
+  const matchingPlayers = players.filter((player) => normalizeText(player.name).includes(normalized));
+  const matches = matchingPlayers.filter((player) => !state.chain.includes(player.id)).slice(0, 7);
+  const chainMatches = matchingPlayers.filter((player) => state.chain.includes(player.id));
 
   els.results.innerHTML = matches.length
     ? matches
@@ -462,7 +461,9 @@ function renderSearchResults(query = "") {
           `,
         )
         .join("")
-    : '<div class="result-item"><span>No players found</span></div>';
+    : chainMatches.length
+      ? `<div class="result-item"><span>${chainMatches.map((player) => player.name).join(", ")} ${chainMatches.length === 1 ? "is" : "are"} already in your chain.</span></div>`
+      : '<div class="result-item"><span>No players found</span></div>';
 
   els.results.classList.add("open");
   els.search.setAttribute("aria-expanded", "true");
