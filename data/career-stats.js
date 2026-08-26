@@ -9,7 +9,7 @@ window.lineageCareerStats = {
   ],
   hall: [
     2010,
-    909
+    989
   ],
   henrique: [
     2010,

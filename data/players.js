@@ -59,14 +59,29 @@ window.lineagePlayers = [
         to: 2020
       },
       {
+        team: "Arizona Coyotes",
+        from: 2019,
+        to: 2020
+      },
+      {
+        team: "Buffalo Sabres",
+        from: 2020,
+        to: 2021
+      },
+      {
         team: "Boston Bruins",
-        from: 2021,
+        from: 2020,
         to: 2023
       },
       {
         team: "Chicago Blackhawks",
         from: 2023,
         to: 2025
+      },
+      {
+        team: "Carolina Hurricanes",
+        from: 2024,
+        to: 2026
       }
     ]
   },
