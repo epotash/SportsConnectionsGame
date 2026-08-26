@@ -19,8 +19,12 @@ Player data is split so the game can keep growing without turning `app.js` into 
 After adding players, run:
 
 ```sh
-node scripts/validate-data.js
+node scripts/prepare-publish.js
 ```
+
+That command validates the data, checks that every sport data file is listed in `sports-manifest.js`,
+checks that NHL batch files are loaded by `index.html`, and bumps the cache version in `index.html`
+so the public GitHub Pages link loads the new files.
 
 To regenerate the large NBA import from FiveThirtyEight's historical NBA CSV:
 
