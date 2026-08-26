@@ -7,6 +7,7 @@ window.lineageSportManifest = {
       "data/nhl/expansion-20260818-b.js",
       "data/nhl/patch-20260818-jon-merrill.js",
       "data/nhl/expansion-20260826-era-anchors.js",
+      "data/nhl/ten-year-anchors-20260826.js",
     ],
   },
   nba: {
@@ -30,6 +31,7 @@ window.lineageSportManifest = {
       "data/nba/generated-20260815-m.js",
       "data/nba/generated-20260815-n.js",
       "data/nba/era-anchors-20260826.js",
+      "data/nba/ten-year-anchors-20260826.js",
     ],
   },
   nfl: {
@@ -45,6 +47,7 @@ window.lineageSportManifest = {
       "data/nfl/expansion-20260816-f.js",
       "data/nfl/expansion-20260816-g.js",
       "data/nfl/era-anchors-20260826.js",
+      "data/nfl/ten-year-anchors-20260826.js",
     ],
   },
   mlb: {
@@ -67,6 +70,7 @@ window.lineageSportManifest = {
       "data/mlb/expansion-20260821-d.js",
       "data/mlb/expansion-20260821-e.js",
       "data/mlb/era-anchors-20260826.js",
+      "data/mlb/ten-year-anchors-20260826.js",
     ],
   },
 };
